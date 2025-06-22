@@ -4,7 +4,7 @@ function Cardproduct() {
     return (
         <div className="container"  style={{
             background: 'none', width: '250px', display: 'flex', flexDirection: 'column', borderRadius: '12px', overflow: 'hidden', justifyItems: "flex-start", height: '430px',
-            margin: '20px', fontFamily: 'Roboto', color: '#112A46', alignItems: 'center', position: 'relative', fontWeight: '900'
+             fontFamily: 'Roboto', color: '#112A46', alignItems: 'center', position: 'relative', fontWeight: '900'
         }}>
 
 

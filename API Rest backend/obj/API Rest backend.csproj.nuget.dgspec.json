@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jr10p\\source\\repos\\ProyectoWEB\\API Rest backend\\API Rest backend.csproj": {}
+    "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jr10p\\source\\repos\\ProyectoWEB\\API Rest backend\\API Rest backend.csproj": {
+    "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jr10p\\source\\repos\\ProyectoWEB\\API Rest backend\\API Rest backend.csproj",
+        "projectUniqueName": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj",
         "projectName": "API Rest backend",
-        "projectPath": "C:\\Users\\jr10p\\source\\repos\\ProyectoWEB\\API Rest backend\\API Rest backend.csproj",
+        "projectPath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj",
         "packagesPath": "C:\\Users\\jr10p\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jr10p\\source\\repos\\ProyectoWEB\\API Rest backend\\obj\\",
+        "outputPath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

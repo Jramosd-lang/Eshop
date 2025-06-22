@@ -13,7 +13,7 @@ function Home() {
         <div>
             <Sidebar visible={mostrarSidebar} />
             <Header toggleSidebar={toggleSidebar} />
-            <div style={{ background: '#E4EDF7', width:'100vw', height:'100vh', margin: '0', padding: '0'} }>
+            <div style={{ background: '#E4EDF7', width:'100vw', height:'100vh', padding: '0'} }>
                 <Cardproduct />
             </div>
         </div>
