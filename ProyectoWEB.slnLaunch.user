@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "API Rest backend\\API Rest backend.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "justsolo.client\\justsolo.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+﻿
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+a {
+    color: white;
+    text-decoration-style: none;
+}
+
+
+#containerLogin {
+    background-color: #2d2e45;
+    display: flex;
+    width: 800px;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0 auto;
+    outline: 2px solid white;
+    height: 500px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 50px 6px;
+    overflow: hidden;
+}
+
+
+.containerImage {
+
+    overflow: hidden;
+    width: 400px;
+    height: 100%;
+}
+
+    .containerImage img {
+        width: 300px;
+        object-fit: cover;
+        height: 100%;
+        display: block;
+    }
+
+.containerInputLogin {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+    .containerInputLogin form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+.form-group {
+
+}
+
+input {
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+h3 {
+
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: -20px;
+
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0px;
+    font-weight: 600;
+    color: #2d2e45;
+    transition: all ease 0.25s;
+}
+
+    button:hover {
+        color: white;
+        background-color: #2d2e45;
+        outline: white 2px solid;
+    }
+
+.container-group{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form img{
+    width:150px;
+    height: 150px;
+    
+}

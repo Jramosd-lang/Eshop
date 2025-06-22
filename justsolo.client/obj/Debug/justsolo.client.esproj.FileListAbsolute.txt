@@ -1,0 +1,2 @@
+C:\Users\jr10p\source\repos\JustSolo\justsolo.client\obj\Debug\justsolo.client.esproj.CoreCompileInputs.cache
+C:\Users\jr10p\source\repos\ProyectoWEB\justsolo.client\obj\Debug\justsolo.client.esproj.CoreCompileInputs.cache

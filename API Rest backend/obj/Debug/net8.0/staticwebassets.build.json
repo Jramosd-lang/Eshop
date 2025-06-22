@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Nnf8RywuGJgDmSbhzSfqBo2udDXpfoC/unG9twiXZ1M=",
+  "Source": "API Rest backend",
+  "BasePath": "_content/API Rest backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

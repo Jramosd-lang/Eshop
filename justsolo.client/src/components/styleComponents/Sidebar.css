@@ -1,0 +1,42 @@
+
+
+.listaSideBar {
+    transition: all ease 0.3s;
+    font-family: Roboto;
+    border-radius: 0;
+    padding-left: 40px;
+    max-width: auto;
+}
+
+
+
+.sidebar {
+    will-change: transform;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #A0EACF;
+    border-right: 2px solid #2d2e45;
+    padding-top: 40px;
+    color: white;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 999;
+}
+
+    /* Cuando está visible */
+    .sidebar.mostrar {
+        transform: translateX(0);
+    }
+
+    /* Cuando está oculta */
+    .sidebar.ocultar {
+        transform: translateX(-100%);
+    }
+
+    .listaSideBar:hover {
+        color: #2d2e45;
+        background-color: #bff9e4;
+    }
+
+

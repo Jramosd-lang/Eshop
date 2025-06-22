@@ -1,0 +1,68 @@
+.botonCompra {
+    background-color: #1888ff;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0px;
+    font-weight: 600;
+    transition: background-color ease 0.25s, color ease 0.25s;
+    width: 90%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+    .botonCompra svg {
+        width: 20px;
+        height: 20px;
+        transition: all ease 0.25s;
+    }
+
+
+    .botonCompra:hover {
+        color: #1888ff;
+        background-color: white;
+        outline: #1888ff 2px solid;
+    }
+
+
+    .buttonFavorite{
+        background-color:transparent;
+        color: white;
+        border-radius: 5px;
+        width: 33px !important;
+        height: 33px !important;
+    }
+
+        .buttonFavorite:hover {
+            color: #ffe20e !important;
+            outline: 0 solid;
+            background-color: #C9DBEE !important;
+        }
+
+    .buttonFavorite svg{
+        width: 30px;
+        height: 30px;
+    }
+
+.container {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
+    border-radius: 15px;
+    transition: all ease 0.25s;
+    outline: 0 solid;
+}
+
+.container:hover{
+    transform: scale(1.025);
+}
+
+
+
+    img:hover~ .buttonFavorite {
+        color: #2d2e45;
+        outline: 0 solid;
+        background-color: #C9DBEE !important;
+    }
