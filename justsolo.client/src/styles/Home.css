@@ -1,10 +1,137 @@
 /* index.css */
+
+
+
+:root {
+    --primary-color: #10b981; /* emerald-500 */
+    --primary-hover: #059669; /* emerald-600 */
+    --primary-light: #34d399; /* emerald-400 */
+    --primary-bg: rgba(16, 185, 129, 0.2); /* emerald-500/20 */
+
+    --color-button-text: #010705;
+
+    --neutral-50: #fafafa;
+    --neutral-100: #f5f5f5;
+    --neutral-200: #e5e5e5;
+    --neutral-300: #d4d4d4;
+    --neutral-400: #a3a3a3;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-700: #404040;
+    --neutral-800: #262626;
+    --neutral-900: #171717;
+    --neutral-950: #0a0a0a;
+    --red-500: #ef4444;
+    --green-500: #22c55e;
+}
+
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
+    width: 100vw;
     padding: 0;
+    color: white;
+    background: #212121;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
 }
 
 #root {
     height: 100%;
 }
+
+.containerInfo{
+    width: 100vw;
+    height: 900px;
+    justify-items:center;
+}
+
+.container {
+    width: fit-content;
+    background-color: #191919;
+    align-content: center;
+    width: 100vw;
+    height: 740px;
+    margin-top: 10vh;
+}
+
+.content{
+    display: flex;
+    margin: 0 auto;
+    gap: 80px;
+    align-items: center;
+    width: 80%;
+}
+
+.content-left {
+    align-content: center;
+    width: 50%;
+    margin-right: 60px; 
+}
+
+.content-right{
+    width: fit-content;
+    height: fit-content;
+    margin-left: -100px;
+}
+
+.content-right svg{
+    width: 700px;
+    height: 500px;
+}
+
+.info-badge {
+    background-color: #16382d;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border-radius: 12px;
+    outline: var(--primary-color) 1px solid;
+    text-align: center;
+}
+
+.title{
+    margin: 10px 0;
+    font-size: 80px;
+    line-height:1.1;
+    flex-wrap: wrap;
+    width: 8lh;
+}
+
+.title-span{
+    color: var(--primary-color);
+}
+
+.descriptionEcommerce{
+    margin: 0  ;
+    width: 20lh;
+    font-size: 22px;
+    width: 700px;
+}
+
+.buttonsInfoEcommerce{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.buttonExplorer {
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: #16382d;
+    width: 12lh;
+    font-size: 16px;
+}
+
+.buttonTOP {
+    width: 12lh;
+    background-color: white;
+    color: #16382d;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.text-content{
+    justify-items: left;
+}
+

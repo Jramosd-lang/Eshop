@@ -5,6 +5,7 @@ import './styles/index.css';
 
 import Login from './Login';
 import Dashboard from './Home.jsx';
+import Products from './Products'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/login" element={<Login />} />
                 <Route path="/home" element={<Dashboard />} />
                 <Route path="*" element={<Navigate to="/login" replace />} />
+                <Route path="/products/dev" element={<Products/>} />
             </Routes>
         </BrowserRouter>
     </StrictMode>

@@ -10,15 +10,18 @@ function Header({ toggleSidebar }) {
     return (
 
         <header style={{
-            backgroundColor: '#2e2d31ff',
-            height: '8vh',
+            background: 'rgba(23, 23, 23, 1)',
+            height: '10vh',
+            borderBottom:'1px solid white',
             display: 'flex',
             alignItems: 'center',
+            paddingRight: '20px',
             justifyContent: 'flex-end',
-            padding: '20px',
             fontFamily: 'Roboto',
             gap: '10px',
-            position: 'relative'
+            position: 'absolute',
+            zIndex:'3',
+            width:'100%'
         }}>
             
             <button
@@ -45,7 +48,7 @@ function Header({ toggleSidebar }) {
                 <li>Mi carrito</li>
             </div>
 
-            <div id="sectionLogin" style={{ display: 'flex'}}>
+            <div id="sectionLogin" style={{ display: 'flex', marginRight:'40px' }}>
                 <button
                     style={{
                         width: '100px',

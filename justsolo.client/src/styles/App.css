@@ -82,17 +82,18 @@ button {
     width: 150px;
     height: 40px;
     border-radius: 12px;
+    background-color: #10b981;
     cursor: pointer;
     border: 0px;
     font-weight: 600;
-    color: #2d2e45;
+    color: white;
     transition: all ease 0.25s;
 }
 
     button:hover {
-        color: white;
-        background-color: #2d2e45;
-        outline: white 2px solid;
+        color: black;
+        background-color: white;
+        outline: #1888ff 2px solid;
     }
 
 .container-group{

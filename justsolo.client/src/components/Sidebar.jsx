@@ -8,20 +8,22 @@ function Sidebar({visible}){
             className={`sidebar ${visible ? "mostrar" : "ocultar"}`}
             style={{
                 position: 'fixed',
-                top: '12.75%',
+                top: '10%',
+                left: '0',
                 width: '250px',
+                background: 'linear-gradient(to bottom,#000000, #2e2d31ff)',
                 height: '100vh',
                 paddingTop: '40px',
                 color: 'white',
-                borderRight: '5px solid #3f4489'
+                zIndex: '3'
             }}
         >
             <h3 style={{ color: 'white', fontFamily: 'Roboto', width: 'auto', padding: '0 auto',fontWeight:'600' ,textAlign: 'center'}}>ECOMMERCE</h3>
-            <div>
-                <li class="listaSideBar"> Productos</li>
-                <li class="listaSideBar">Categorias</li>
-                <li class="listaSideBar">PQRS</li>
-            </div>
+            <ul style={{ margin: '0', padding: '0', listStyle: 'none' }}>
+                <li className="listaSideBar">Productos</li>
+                <li className="listaSideBar">Categorías</li>
+                <li className="listaSideBar">PQRS</li>
+            </ul>
         </aside>
     );
 }

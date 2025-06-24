@@ -1,0 +1,20 @@
+.body{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+.input{
+    border: none;
+    border-radius: 5px;
+    width:220px;
+}
+
+#sectionArea{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

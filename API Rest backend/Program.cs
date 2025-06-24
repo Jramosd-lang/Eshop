@@ -16,6 +16,8 @@ builder.Services.AddDbContext<EcomerceContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
 });
 
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
