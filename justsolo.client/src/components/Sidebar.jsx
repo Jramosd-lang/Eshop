@@ -10,7 +10,6 @@ function Sidebar({visible}){
                 position: 'fixed',
                 top: '12.75%',
                 width: '250px',
-                background: '#585c94',
                 height: '100vh',
                 paddingTop: '40px',
                 color: 'white',
