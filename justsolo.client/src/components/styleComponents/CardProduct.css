@@ -1,5 +1,4 @@
 .botonCompra {
-    background-color: #1888ff;
     color: white;
     width: 150px;
     height: 40px;
@@ -22,11 +21,6 @@
     }
 
 
-    .botonCompra:hover {
-        color: #1888ff;
-        background-color: white;
-        outline: #1888ff 2px solid;
-    }
 
 
     .buttonFavorite{

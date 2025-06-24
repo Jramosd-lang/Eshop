@@ -50,7 +50,7 @@ html, body {
     background-color: #191919;
     align-content: center;
     width: 100vw;
-    height: 740px;
+    height: 500px;
     margin-top: 10vh;
 }
 
@@ -98,9 +98,7 @@ html, body {
     width: 8lh;
 }
 
-.title-span{
-    color: var(--primary-color);
-}
+
 
 .descriptionEcommerce{
     margin: 0  ;
@@ -133,5 +131,14 @@ html, body {
 
 .text-content{
     justify-items: left;
+}
+
+.productsTOP{
+    margin-top:60px;
+    text-align: center;
+}
+
+span {
+    color: var(--primary-color);
 }
 

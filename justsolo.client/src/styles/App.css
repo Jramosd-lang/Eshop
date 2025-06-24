@@ -91,9 +91,9 @@ button {
 }
 
     button:hover {
-        color: black;
+        color: rgba(23, 23, 23, 1);
         background-color: white;
-        outline: #1888ff 2px solid;
+        outline: #10b981 2px solid;
     }
 
 .container-group{

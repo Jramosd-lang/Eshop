@@ -75,26 +75,40 @@ function Home() {
                             </div>
                         </div>
                 </section>  
-                    
- 
-                <div style={{
-                    width: '100vw', height: '100vh', padding: '0',
-                    display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center',
-                    paddingInline:'50px'} }>
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
-                    <Cardproduct />
 
-                </div>
+
+                <section className="productsTOP" style={{
+
+                    width: '100vw', height: '100vh', padding: '0',
+                    display: 'flex', flexDirection: 'column', gap: '50px', justifyContent: 'center',
+                    paddingInline: '50px', alignItems:'center'
+                }}>
+
+                    <div>
+                        <h3>Mejores <span>Productos</span></h3>
+                    </div>
+
+                    <div style={{
+                        width: '80vw', display: 'flex', flexWrap: 'wrap', gap: '60px', justifyContent: 'center',
+                        maxWidth: '100vw'
+                    }}>
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                        <Cardproduct />
+                    </div>
+
+                </section>
+ 
+                
             </div>
         </div>
     );

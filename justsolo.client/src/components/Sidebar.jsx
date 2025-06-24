@@ -11,8 +11,9 @@ function Sidebar({visible}){
                 top: '10%',
                 left: '0',
                 width: '250px',
-                background: 'linear-gradient(to bottom,#000000, #2e2d31ff)',
+                background: 'rgba(23, 23, 23, 1)',
                 height: '100vh',
+                borderRight:'solid 2px #fff',
                 paddingTop: '40px',
                 color: 'white',
                 zIndex: '3'

@@ -4,7 +4,7 @@ function Cardproduct() {
     return (
         <div className="containerCard"  style={{
             background: 'none', width: '250px', display: 'flex', flexDirection: 'column', borderRadius: '12px', overflow: 'hidden', justifyItems: "flex-start", height: '430px',
-             fontFamily: 'Roboto', color: '#112A46', alignItems: 'center', position: 'relative', fontWeight: '900'
+             fontFamily: 'Roboto', alignItems: 'center', position: 'relative', fontWeight: '900'
         }}>
 
 
@@ -13,7 +13,7 @@ function Cardproduct() {
 
             <div style={{padding: '10px', display: 'flex', flexDirection: 'column'} }>
                 <h2 style={{ fontSize: '18px', fontWeight:'900'}}>WRM V9 Version BALL CORE </h2>
-                <p style={{ color: ' #0077B6', fontSize: "18px", marginTop: '-10px' } }>$95.000 COP</p>
+                <p style={{  fontSize: "18px", marginTop: '-10px' } }>$95.000 COP</p>
             </div>
 
 
