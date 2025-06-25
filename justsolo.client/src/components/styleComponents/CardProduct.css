@@ -34,7 +34,7 @@
         .buttonFavorite:hover {
             color: #ffe20e !important;
             outline: 0 solid;
-            background-color: #C9DBEE !important;
+            background: #212121 !important;
         }
 
     .buttonFavorite svg{
@@ -56,7 +56,7 @@
 
 
     img:hover~ .buttonFavorite {
-        color: #2d2e45;
+        color: #fff;
         outline: 0 solid;
-        background-color: #C9DBEE !important;
+        background-color: #212121 !important;
     }

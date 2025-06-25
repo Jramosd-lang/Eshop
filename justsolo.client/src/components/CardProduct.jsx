@@ -1,5 +1,7 @@
 
 import "./styleComponents/CardProduct.css"
+
+
 function Cardproduct() {
     return (
         <div className="containerCard"  style={{
@@ -8,12 +10,14 @@ function Cardproduct() {
         }}>
 
 
-            <img className="img" src="./Resources/prueba.jpg" style={{ width: '250px' }} />
+            <div style={{height:'fit-content'} }>
+                <img className="img" src="./Resources/prueba.jpg" style={{ width: '250px'}} />
 
+            </div>
 
             <div style={{padding: '10px', display: 'flex', flexDirection: 'column'} }>
                 <h2 style={{ fontSize: '18px', fontWeight:'900'}}>WRM V9 Version BALL CORE </h2>
-                <p style={{  fontSize: "18px", marginTop: '-10px' } }>$95.000 COP</p>
+                <p style={{  fontSize: "18px", marginTop: '-10px', color: '#10b981' } }>$95.000 COP</p>
             </div>
 
 

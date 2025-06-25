@@ -7,6 +7,7 @@
     border-radius: 12px;
     color: white;
     font-family: Roboto;
+    width: 800px;
     box-shadow: 0px 4px 16px rgba(0,0,0,0.6);
 }
 
@@ -19,6 +20,7 @@ form {
     flex-direction: column;
     margin-bottom:30px;
     gap:30px;
+    width: 100%;
 }
 
 .sectionInput{
@@ -28,4 +30,12 @@ form {
 
 #sectionArea{
     border-radius: 12px;
+}
+
+
+.containerCRUDProduct{
+    display: flex;
+    gap: 100px;
+    align-items: center; 
+    justify-content: space-between;
 }

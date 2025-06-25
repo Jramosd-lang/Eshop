@@ -3,11 +3,13 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Cardproduct from './components/CardProduct';
 import "./styles/Home.css";
+import "./styles/App.css";
 
 function Home() {
     const [mostrarSidebar, setMostrarSidebar] = useState(false);
 
     const toggleSidebar = () => setMostrarSidebar(!mostrarSidebar);
+
 
     return (
         <div>
@@ -27,23 +29,23 @@ function Home() {
                                         <badge className="info-badge">Nuevos productos cada mes
                                         </badge>
                                         <h1 className="title">
-                                            Elegancia
+                                            Eleg√°ncia
                                             <span className="title-span"> Redefinida</span>
                                         </h1>
                                         <p className="descriptionEcommerce">
 
                                             En ecommerce estamos siempre preocupandonos por tus necesidades, con un solo click
-                                        accede a nuestros productos y disfruta de una vida mas feliz y sencilla, te esperamos
-                                        con los brazos abiertos
+                                            accede a nuestros productos y disfruta de una vida mas feliz y sencilla, te esperamos
+                                            con los brazos abiertos
                                             
                                         </p>
                                     </div>
                                     <div className="buttonsInfoEcommerce">
-                                        <button className= "buttonExplorer" onClick={() => console.log("Explorar colecciÛn")}>
+                                        <button className= "buttonExplorer" onClick={() => console.log("Explorar colecciÔøΩn")}>
                                             Explorar Categorias
 
                                         </button>
-                                        <button variant="outline" className="buttonTOP" onClick={() => console.log("Ver cat·logo")}>
+                                        <button variant="outline" className="buttonTOP" onClick={() => console.log("Ver catÔøΩlogo")}>
                                             Ver Productos
                                         </button>
                                     </div>

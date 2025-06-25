@@ -30,16 +30,15 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
         'Pem',
         '--no-password',
     ], { stdio: 'inherit', }).status) {
-        throw new Error("Could not create certificate.");
+        throw new Error("Could not crear el certificado.");
     }
 }
-
-
 
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
     env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7121';
 
-// https://vitejs.dev/config/
+
+
 export default defineConfig({
     plugins: [plugin()],
     resolve: {
@@ -59,6 +58,12 @@ export default defineConfig({
             key: fs.readFileSync(keyFilePath),
             cert: fs.readFileSync(certFilePath),
         },
-       
+        configureServer: (server) => {
+            server.middlewares.use((req, res, next) => {
+                // Solo agrega charset si es HTML
+                res.setHeader('Content-Type', 'text/html; charset=UTF-8');
+                next();
+            });
+        }
     }
-})
+});

@@ -10,7 +10,8 @@ function Header({ toggleSidebar }) {
     return (
 
         <header style={{
-            background: 'rgba(23, 23, 23, 1)',
+            background: 'rgba(23, 23, 23, 0.85)',
+            backdropFilter:'blur(30px)',
             height: '10vh',
             borderBottom:'1px solid white',
             display: 'flex',
@@ -41,7 +42,7 @@ function Header({ toggleSidebar }) {
                 </svg>
             </button>
 
-            <a style={{ color: 'white' , marginRight: 'auto', fontWeight: '700', cursor: 'pointer'}}>ECOMMERCE</a>
+            <a className="logo" style={{ color: 'white' , marginRight: 'auto', fontWeight: '900',fontSize:'25px', cursor: 'pointer'}}>ECOMMERCE</a>
 
             <div style={{ display: 'flex', gap: '30px', marginRight: '40px', color: 'white' }}>
                 <li>Ofertas</li>

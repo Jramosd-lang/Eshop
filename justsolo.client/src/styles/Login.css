@@ -1,0 +1,150 @@
+#background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh; 
+}
+
+#bc {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    backdrop-filter: blur(150px);
+}
+
+#containerLogin {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(23, 23, 23, 0.55);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    padding: 30px;
+}
+
+h3{
+    height: 0lh;
+}
+
+form{
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+form h3{
+    font-size: 30px;
+}
+
+.circle {
+    width: 40%;
+    height: 40%;
+    z-index: 0;
+    border-radius: 50%;
+    position: fixed;
+}
+
+#circle1{
+    background-color: #1f3f34;
+    left: 10%;
+    top: 12%; 
+}
+
+#circle2 {
+    background-color: #195540;
+    left: 0;
+}
+
+#circle3 {
+    background-color: #00847c;
+    top: 70%;
+    right: 20%;
+}
+
+#circle4 {
+    background-color: #004041;
+    top: 30%;
+    left: 80%;
+}
+
+#circle5{
+    background-color: #00272f;
+    top: 10%;
+    right: 10%;
+}
+
+#circle6{
+    background-color: #005d37;
+}
+
+.help-links{
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+    padding: 4px 4px;
+    color: white;
+}
+
+a{
+    height: 0lh;
+}
+
+/* Soporte para mostrar el botón de revelar contraseña en Edge y Chrome */
+input[type="password"]::-ms-reveal {
+    filter: invert(1);
+}
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"]::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.buttonLogin{
+    background-color: #46a089;
+}
+
+input:placeholder-shown {
+    outline: 2px #000000 solid;
+}
+
+input:not(:placeholder-shown) {
+    outline: 2px #195540 solid;
+}
+
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    accent-color: #195540;
+    border-radius: 12px;
+    border: 2px solid #195540;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 0 4px rgba(25,85,64,0.2);
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px #00847c solid ;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #195540;
+    border-color: #00847c;
+    border-radius: 5px;
+}

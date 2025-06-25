@@ -27,3 +27,7 @@ button:hover a{
     li:hover {
         background-color: #3b3c54;
     }
+
+.logo {
+    background: linear-gradient(90deg,rgba(23, 23, 23, 1),);
+}

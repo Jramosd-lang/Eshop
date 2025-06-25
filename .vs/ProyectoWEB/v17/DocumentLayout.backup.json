@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\styles\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\styles\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\styles\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\styles\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\styles\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\styles\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\components\\stylecomponents\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\components\\stylecomponents\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0420D42A-9C58-4C73-A3BE-DD5B14A7C77A}|API Rest backend\\API Rest backend.csproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\api rest backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0420D42A-9C58-4C73-A3BE-DD5B14A7C77A}|API Rest backend\\API Rest backend.csproj|solutionrelative:api rest backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\styles\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\styles\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\src\\styles\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|solutionrelative:justsolo.client\\src\\styles\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61D03407-A46C-9A93-A22C-F4C11578955D}|justsolo.client\\justsolo.client.esproj|c:\\users\\jr10p\\source\\repos\\eshopgit\\justsolo.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,22 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.css",
-              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\Home.css",
-              "RelativeDocumentMoniker": "justsolo.client\\src\\styles\\Home.css",
-              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\Home.css",
-              "RelativeToolTip": "justsolo.client\\src\\styles\\Home.css",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-23T20:45:36.308Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -75,64 +61,97 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\Login.jsx",
+              "RelativeDocumentMoniker": "justsolo.client\\src\\Login.jsx",
+              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\Login.jsx",
+              "RelativeToolTip": "justsolo.client\\src\\Login.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-25T21:37:07.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "eslint.config.js",
+              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\eslint.config.js",
+              "RelativeDocumentMoniker": "justsolo.client\\eslint.config.js",
+              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\eslint.config.js",
+              "RelativeToolTip": "justsolo.client\\eslint.config.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-25T21:27:41.843Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\package.json",
+              "RelativeDocumentMoniker": "justsolo.client\\package.json",
+              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\package.json",
+              "RelativeToolTip": "justsolo.client\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T21:21:27.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\Login.css",
+              "RelativeDocumentMoniker": "justsolo.client\\src\\styles\\Login.css",
+              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\Login.css",
+              "RelativeToolTip": "justsolo.client\\src\\styles\\Login.css",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-24T19:42:23.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\index.css",
+              "RelativeDocumentMoniker": "justsolo.client\\src\\styles\\index.css",
+              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\index.css",
+              "RelativeToolTip": "justsolo.client\\src\\styles\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-24T14:27:13.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\App.css",
               "RelativeDocumentMoniker": "justsolo.client\\src\\styles\\App.css",
               "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\styles\\App.css",
               "RelativeToolTip": "justsolo.client\\src\\styles\\App.css",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-23T23:44:24.116Z"
+              "WhenOpened": "2025-06-24T14:24:34.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\Home.jsx",
-              "RelativeDocumentMoniker": "justsolo.client\\src\\Home.jsx",
-              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\Home.jsx",
-              "RelativeToolTip": "justsolo.client\\src\\Home.jsx",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEQAAAChAgAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-23T20:32:24.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launch.json",
-              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\.vscode\\launch.json",
-              "RelativeDocumentMoniker": "justsolo.client\\.vscode\\launch.json",
-              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\.vscode\\launch.json",
-              "RelativeToolTip": "justsolo.client\\.vscode\\launch.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-23T18:52:21.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "vite.config.js",
               "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\vite.config.js",
               "RelativeDocumentMoniker": "justsolo.client\\vite.config.js",
               "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\vite.config.js",
               "RelativeToolTip": "justsolo.client\\vite.config.js",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-23T18:52:02.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\API Rest backend\\Program.cs",
-              "RelativeDocumentMoniker": "API Rest backend\\Program.cs",
-              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\API Rest backend\\Program.cs",
-              "RelativeToolTip": "API Rest backend\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T18:50:51.4Z"
+              "WhenOpened": "2025-06-24T14:22:04.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -142,25 +161,9 @@
               "RelativeDocumentMoniker": "justsolo.client\\index.html",
               "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\index.html",
               "RelativeToolTip": "justsolo.client\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-23T17:55:39.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Header.css",
-              "DocumentMoniker": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\components\\styleComponents\\Header.css",
-              "RelativeDocumentMoniker": "justsolo.client\\src\\components\\styleComponents\\Header.css",
-              "ToolTip": "C:\\Users\\jr10p\\source\\repos\\EshopGIT\\justsolo.client\\src\\components\\styleComponents\\Header.css",
-              "RelativeToolTip": "justsolo.client\\src\\components\\styleComponents\\Header.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-23T17:24:58.138Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2025-06-24T14:03:59.956Z"
             }
           ]
         },
