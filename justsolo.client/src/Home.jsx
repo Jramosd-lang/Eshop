@@ -2,19 +2,41 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Cardproduct from './components/CardProduct';
+import { motion } from 'framer-motion';
 import "./styles/Home.css";
 import "./styles/App.css";
 
 function Home() {
     const [mostrarSidebar, setMostrarSidebar] = useState(false);
+    const [mostrarSpinner, setMostrarSpinner] = useState(true);
 
     const toggleSidebar = () => setMostrarSidebar(!mostrarSidebar);
 
-
     return (
         <div>
-            <Sidebar visible={mostrarSidebar} />
+            {mostrarSpinner && (
+                <motion.div
+                    className="container-spinner"
+                    animate={{ opacity: 0 }}
+                    transition={{ duration: 1, ease: "linear" }}
+                    onAnimationComplete={() => setMostrarSpinner(false)}
+                >
+                    <motion.div
+                        className="spinner"
+                        animate={{ rotate: 360, opacity: 0 }}
+                        transition={{ duration: 1.5, ease: "linear" }}
+                    />
+                </motion.div>
+            )}
+
+            <Sidebar
+                visible={mostrarSidebar}
+                onClose={() => setMostrarSidebar(false)}
+            />
             <Header toggleSidebar={toggleSidebar} />
+
+       
+
             <div style={{
                 width: '100vw', height: '100vh', padding: '0',
                 display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center',

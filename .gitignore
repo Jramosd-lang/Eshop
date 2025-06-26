@@ -170,6 +170,56 @@ _NCrunch_*
 .NCrunch_*
 .*crunch*.local.xml
 nCrunchTemp_*
+#################################
+# Visual Studio y .NET
+#################################
+.vs/
+*.user
+*.suo
+*.db
+*.bak
+*.backup.json
+*.DocumentLayout.json
+
+# Archivos de compilación
+bin/
+obj/
+out/
+Generated\ Files/
+
+# Archivos de publicación
+*.publishsettings
+
+# Paquetes de NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+#################################
+# Node.js / Frontend
+#################################
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# Archivos de configuración específicos
+.env
+.env.*
+
+#################################
+# Archivos del sistema operativo
+#################################
+Thumbs.db
+Desktop.ini
+
+#################################
+# Otros editores
+#################################
+*.vscode/*
+.idea/
 
 # MightyMoose
 *.mm.*

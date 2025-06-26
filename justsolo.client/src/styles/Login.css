@@ -150,6 +150,20 @@ input[type="checkbox"]{
     box-shadow: 0 0 4px rgba(25,85,64,0.2);
 }
 
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 50%;
+    border: 4px solid #00847c;
+    border-top-color: white;
+    will-change: transform;
+}
+
 input[type="checkbox"]:focus {
     outline: 2px #00847c solid ;
     border-radius: 5px;
@@ -268,3 +282,14 @@ input[type="checkbox"]:checked {
     color: #00847c;
 }
 
+.container-spinner {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}

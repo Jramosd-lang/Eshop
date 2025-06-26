@@ -26,8 +26,13 @@ async function confirmLogin(email, password) {
     }
 }
 
+
 function App() {
-    const [email, setEmail] = useState(''); const [password, setPassword] = useState(''); const [error, setError] = useState(''); const navigate = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate('');
+    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -35,7 +40,10 @@ function App() {
         try {
             const user = await confirmLogin(email, password);
             if (user) {
+                setLoading(true);
+                await new Promise(resolve => setTimeout(resolve, 1500));
                 navigate('/home');
+
             } else {
                 setError('Usuario o contraseña incorrectos');
             }
@@ -46,6 +54,20 @@ function App() {
 
     return (
         <div id="background" >
+            {loading && (
+                <motion.div className="container-spinner">
+                    <motion.div
+                        className="spinner"
+                        animate={{ rotate: 360 }}
+                        transition={{
+                            duration: 1.5,
+                            repeat: Infinity,
+                            ease: "linear",
+                        }}
+                    />
+                </motion.div>
+            )}
+
             <motion.div
                 className="circle"
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
