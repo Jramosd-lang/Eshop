@@ -1,20 +1,14 @@
 {
-    "routes": [
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "rewrites": [
         {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
+            "source": "/Resources/(.*)",
+            "destination": "/Resources/$1"
         },
         {
-            "src": "/assets/(.*)",
-            "dest": "/assets/$1"
-        },
-        {
-            "src": "/Resources/(.*)",
-            "dest": "/Resources/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
+            "source": "/(.*)",
+            "destination": "/index.html"
         }
     ]
 }
