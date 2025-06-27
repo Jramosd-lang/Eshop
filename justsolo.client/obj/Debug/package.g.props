@@ -9,12 +9,10 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
-    <PackageJsonScriptsPreinstall Condition="$(PackageJsonScriptsPreinstall) == ''">npx @rollup/rollup-linux-x64-gnu@latest || true</PackageJsonScriptsPreinstall>
     <PackageJsonDependenciesFramerMotion Condition="$(PackageJsonDependenciesFramerMotion) == ''">^12.19.1</PackageJsonDependenciesFramerMotion>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.0</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.6.2</PackageJsonDependenciesReactRouterDom>
-    <PackageJsonDevdependenciesRollupRollupLinuxX64Gnu Condition="$(PackageJsonDevdependenciesRollupRollupLinuxX64Gnu) == ''">^4.0.0</PackageJsonDevdependenciesRollupRollupLinuxX64Gnu>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.25.0</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.1.2</PackageJsonDevdependenciesTypesReact>
     <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.1.2</PackageJsonDevdependenciesTypesReactDom>
@@ -25,5 +23,9 @@
     <PackageJsonDevdependenciesGlobals Condition="$(PackageJsonDevdependenciesGlobals) == ''">^16.0.0</PackageJsonDevdependenciesGlobals>
     <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^6.3.5</PackageJsonDevdependenciesVite>
     <PackageJsonDevdependenciesVitePluginSvgr Condition="$(PackageJsonDevdependenciesVitePluginSvgr) == ''">^4.3.0</PackageJsonDevdependenciesVitePluginSvgr>
+    <PackageJsonOptionaldependenciesRollupRollupLinuxX64Gnu Condition="$(PackageJsonOptionaldependenciesRollupRollupLinuxX64Gnu) == ''">^4.44.1</PackageJsonOptionaldependenciesRollupRollupLinuxX64Gnu>
+    <PackageJsonOptionaldependenciesRollupRollupWin32X64Msvc Condition="$(PackageJsonOptionaldependenciesRollupRollupWin32X64Msvc) == ''">^4.44.1</PackageJsonOptionaldependenciesRollupRollupWin32X64Msvc>
+    <PackageJsonOptionaldependenciesRollupRollupDarwinX64 Condition="$(PackageJsonOptionaldependenciesRollupRollupDarwinX64) == ''">^4.44.1</PackageJsonOptionaldependenciesRollupRollupDarwinX64>
+    <PackageJsonOptionaldependenciesRollupRollupDarwinArm64 Condition="$(PackageJsonOptionaldependenciesRollupRollupDarwinArm64) == ''">^4.44.1</PackageJsonOptionaldependenciesRollupRollupDarwinArm64>
   </PropertyGroup>
 </Project>
