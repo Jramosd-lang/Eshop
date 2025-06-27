@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+         "preinstall": "npx @rollup/rollup-linux-x64-gnu@latest || true"
+        
+    },
   "dependencies": {
     "framer-motion": "^12.19.1",
     "react": "^19.1.0",
