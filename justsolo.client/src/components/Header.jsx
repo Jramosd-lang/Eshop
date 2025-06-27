@@ -19,13 +19,13 @@ function Header({ toggleSidebar }) {
             paddingRight: '20px',
             justifyContent: 'flex-end',
             fontFamily: 'Roboto',
-            gap: '10px',
             position: 'absolute',
             zIndex:'3',
-            width:'100%'
+            width: '100%',
+            padding:' 0 10px'
         }}>
             
-            <button
+            <button className="menu"
                 onClick={toggleSidebar}
                 style={{
                     background: 'transparent',
@@ -42,23 +42,17 @@ function Header({ toggleSidebar }) {
                 </svg>
             </button>
 
+            <img className="logoSVG" style={{ width:'95px',height:'80px'}} src="./Resources/Frame 1 (2).svg" />
+
             <a className="logo" style={{ color: 'white' , marginRight: 'auto', fontWeight: '900',fontSize:'25px', cursor: 'pointer'}}>ECOMMERCE</a>
 
-            <div style={{ display: 'flex', gap: '30px', marginRight: '40px', color: 'white' }}>
-                <li>Ofertas</li>
-                <li>Mi carrito</li>
-            </div>
+            <ul className="flex-gap-style">
+                <li className="optionsHeader">Ofertas</li>
+                <li className="optionsHeader">Mi carrito</li>
+            </ul>
 
-            <div id="sectionLogin" style={{ display: 'flex', marginRight:'40px' }}>
-                <button
-                    style={{
-                        width: '100px',
-                        padding: '20px',
-                        textAlign: 'center',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}
+            <div id="sectionLogin">
+                <button className="buttonLogear"
                     onClick={() => { navigate("/");}}
                 >
                     Login

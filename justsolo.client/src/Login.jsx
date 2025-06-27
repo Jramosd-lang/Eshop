@@ -173,6 +173,7 @@ function App() {
                                 <button className="buttonLogin" type="submit">Iniciar Sesión</button>
                                 o inicia sesion cón
                                 <button className="button-google"> 
+
                                 <svg>
                                         <svg width="20" height="20" viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg"
                                             preserveAspectRatio="xMidYMid"><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 

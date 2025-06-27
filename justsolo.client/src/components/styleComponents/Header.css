@@ -7,6 +7,76 @@ header li,a{
     cursor: pointer;
 }
 
+.menu{
+    width: fit-content;
+}
+
+@media only screen and (max-width: 650px) {
+    .logoSVG {
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+    }
+
+    a {
+        display: none;
+        width: 0;
+    }
+}
+
+.flex-gap-style {
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+    color: white;
+    width: fit-content;
+    justify-content: flex-start;
+    margin-right: 30px;
+    align-content: center;
+ }
+
+
+@media only screen and (max-width: 570px){
+    header {
+        display: flex;
+        gap: 0;
+    }
+    .logoSVG {
+        max-width: 15%;
+        height: 50px;
+    }
+
+    .flex-gap-style{
+        display: flex;
+        gap:10px;
+        margin-right: 20px;
+    }
+
+
+}
+
+
+.buttonLogear {
+    width: 90px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:440px){
+    .flex-gap-style {
+        font-size: 14px;
+    }
+    .buttonLogear {
+        padding: 0 10px;
+        width: fit-content;
+    }
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -22,11 +92,22 @@ button:hover a{
     color: white;
 }
 
+.optionsHeader {
+    margin: 0;
+    align-content: center;
+
+    text-align: center;
+}
+
 
     li:hover {
         background-color: #3b3c54;
     }
 
-.logo {
-    background: linear-gradient(90deg,rgba(23, 23, 23, 1),);
+
+#sectionLogin{
+    width: fit-content;
+    margin-right: 30px;
+
 }
+
