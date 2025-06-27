@@ -12,7 +12,4 @@
     <None Remove="Resorces\**" />
     <TypeScriptConfiguration Remove="Resorces\**" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="public\" />
-  </ItemGroup>
 </Project>
