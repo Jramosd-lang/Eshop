@@ -171,7 +171,7 @@ function App() {
                          
                             <div className= "section-button-session">
                                 <button className="buttonLogin" type="submit">Iniciar Sesión</button>
-                                ó inicia sesion cón
+                                o inicia sesion cón
                                 <button className="button-google"> 
                                 <svg>
                                         <svg width="20" height="20" viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg"
