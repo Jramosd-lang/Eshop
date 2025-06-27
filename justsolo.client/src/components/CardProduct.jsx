@@ -11,7 +11,7 @@ function Cardproduct() {
 
 
             <div style={{height:'fit-content'} }>
-                <img className="img" src="./Resources/prueba.jpg" style={{ width: '250px'}} />
+                <img className="img" src="/Resources/prueba.jpg" style={{ width: '250px'}} />
 
             </div>
 
