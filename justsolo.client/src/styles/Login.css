@@ -31,6 +31,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .containerLogin{
+        max-height: 100%;
+    }
     #containerLogin{
         width: 60%;
     }
@@ -38,6 +41,7 @@
 
 .containerLogin{
     width: 100%;
+    height: 100%;
 }
 
 
