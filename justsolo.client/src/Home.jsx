@@ -38,9 +38,9 @@ function Home() {
        
 
             <div style={{
-                width: '100vw', height: '100vh', padding: '0',
-                display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center',
-                paddingTop:'0'
+                width: '100vw', height: 'fit-content',padding: '0',
+                display: 'flex', flexWrap: 'wrap', justifyContent: 'center',
+                paddingTop: '0'
             }}>
 
                 <section className="containerInfo">
@@ -103,7 +103,7 @@ function Home() {
 
                 <section className="productsTOP" style={{
 
-                    width: '100vw', height: '100vh', padding: '0',
+                    width: '100vw', padding: '0',
                     display: 'flex', flexDirection: 'column', gap: '50px', justifyContent: 'center',
                     paddingInline: '50px', alignItems:'center'
                 }}>
@@ -113,8 +113,9 @@ function Home() {
                     </div>
 
                     <div style={{
+             
                         width: '80vw', display: 'flex', flexWrap: 'wrap', gap: '60px', justifyContent: 'center',
-                        maxWidth: '100vw'
+                        maxWidth: '100vw', height:'fit-content'
                     }}>
                         <Cardproduct />
                         <Cardproduct />

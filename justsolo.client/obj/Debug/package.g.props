@@ -22,5 +22,6 @@
     <PackageJsonDevdependenciesEslintPluginReactRefresh Condition="$(PackageJsonDevdependenciesEslintPluginReactRefresh) == ''">^0.4.19</PackageJsonDevdependenciesEslintPluginReactRefresh>
     <PackageJsonDevdependenciesGlobals Condition="$(PackageJsonDevdependenciesGlobals) == ''">^16.0.0</PackageJsonDevdependenciesGlobals>
     <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^6.3.5</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesVitePluginSvgr Condition="$(PackageJsonDevdependenciesVitePluginSvgr) == ''">^4.3.0</PackageJsonDevdependenciesVitePluginSvgr>
   </PropertyGroup>
 </Project>

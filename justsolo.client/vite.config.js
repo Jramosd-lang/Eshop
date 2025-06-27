@@ -7,6 +7,7 @@ import path from 'path';
 import child_process from 'child_process';
 import { env } from 'process';
 
+
 const baseFolder =
     env.APPDATA !== undefined && env.APPDATA !== ''
         ? `${env.APPDATA}/ASP.NET/https`
@@ -19,6 +20,8 @@ const keyFilePath = path.join(baseFolder, `${certificateName}.key`);
 if (!fs.existsSync(baseFolder)) {
     fs.mkdirSync(baseFolder, { recursive: true });
 }
+
+
 
 if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     if (0 !== child_process.spawnSync('dotnet', [
