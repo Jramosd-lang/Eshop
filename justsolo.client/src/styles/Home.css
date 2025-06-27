@@ -50,7 +50,8 @@ html, body {
     background-color: #191919;
     align-content: center;
     width: 100vw;
-    height: 500px;
+    height: fit-content;
+    padding: 40px 0;
     margin-top: 10vh;
 }
 
@@ -71,7 +72,7 @@ html, body {
 /* Firefox */
 body {
     scrollbar-width: thin; /* Opcional: thin, auto, none */
-    scrollbar-color: #059669 #16382d; /* thumb | track */
+    scrollbar-color: #059669 #19321fc8; /* thumb | track */
 }
 
 
@@ -81,11 +82,20 @@ body {
     gap: 80px;
     align-items: center;
     width: 80%;
+    max-width: 90%;
+}
+
+@media only screen and (max-width: 480px) {
+    .content-right {
+        display: none;
+        flex-direction: column;
+    }
 }
 
 .content-left {
     align-content: center;
     width: 50%;
+    max-width: 90%;
     margin-right: 60px; 
 }
 
@@ -119,6 +129,10 @@ body {
     width: 8lh;
 }
 
+.subtitle{
+    font-size: 35px;
+
+}
 
 
 .descriptionEcommerce{
@@ -126,6 +140,7 @@ body {
     width: 20lh;
     font-size: 22px;
     width: 700px;
+    max-width: 100%;
 }
 
 .buttonsInfoEcommerce{
@@ -151,6 +166,7 @@ body {
 
 .text-content{
     justify-items: left;
+    max-width: 100%;
 }
 
 .productsTOP{

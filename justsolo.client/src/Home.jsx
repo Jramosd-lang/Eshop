@@ -109,7 +109,7 @@ function Home() {
                 }}>
 
                     <div>
-                        <h3>Mejores <span>Productos</span></h3>
+                        <h3 className="subtitle">Mejores <span>Productos</span></h3>
                     </div>
 
                     <div style={{
