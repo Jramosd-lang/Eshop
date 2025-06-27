@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import CRUDProducts from './components/CRUDproducts';
+import Header from './components/Header.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import CRUDProducts from './components/CRUDproducts.jsx';
 import './styles/Products.css';
 
 
