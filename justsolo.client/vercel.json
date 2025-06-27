@@ -9,6 +9,10 @@
             "dest": "/assets/$1"
         },
         {
+            "src": "/Resources/(.*)",
+            "dest": "/Resources/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "/index.html"
         }
