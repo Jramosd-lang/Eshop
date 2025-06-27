@@ -1,18 +1,25 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+# Etapa de compilación
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copia todos los archivos al contenedor
+COPY . ./
+
+# Restaura paquetes NuGet
+RUN dotnet restore "Backend.csproj"
+
+# Publica la aplicación en modo Release
+RUN dotnet publish "Backend.csproj" -c Release -o /app/publish
+
+# Etapa final: contenedor ligero de runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
-# Copia todo el código del proyecto
-COPY . .
+# Copia los archivos publicados desde el contenedor anterior
+COPY --from=build /app/publish .
 
-# Usa comillas dobles para nombres con espacios
-RUN dotnet restore "API Rest backend.csproj"
-
-RUN dotnet publish "API Rest backend.csproj" -c Release -o out
-
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
-WORKDIR /app
-COPY --from=build /app/out .
-
+# Exponer el puerto por defecto
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "API Rest backend.dll"]
+# Iniciar la aplicación
+ENTRYPOINT ["dotnet", "Backend.dll"]

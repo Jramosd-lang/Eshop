@@ -4447,9 +4447,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj",
-      "projectName": "API Rest backend",
-      "projectPath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\API Rest backend.csproj",
+      "projectUniqueName": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\Backend.csproj",
+      "projectName": "Backend",
+      "projectPath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\jr10p\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\obj\\",
       "projectStyle": "PackageReference",

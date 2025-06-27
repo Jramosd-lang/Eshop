@@ -3,7 +3,7 @@
     "Name": "Nuevo perfil",
     "Projects": [
       {
-        "Path": "API Rest backend\\API Rest backend.csproj",
+        "Path": "API Rest backend\\Backend.csproj",
         "Action": "Start"
       },
       {

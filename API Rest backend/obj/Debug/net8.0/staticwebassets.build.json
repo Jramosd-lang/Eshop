@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "Nnf8RywuGJgDmSbhzSfqBo2udDXpfoC/unG9twiXZ1M=",
-  "Source": "API Rest backend",
-  "BasePath": "_content/API Rest backend",
+  "Hash": "+8gz7rjoDcLSTM7Kwf5qkbapKXDd97xhyAb9pxhYrew=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
