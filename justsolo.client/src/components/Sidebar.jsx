@@ -133,7 +133,7 @@ const Sidebar = ({ visible, onClose }) => {
                     top: "10vh",
                     left: 0,
                     width: "225px",
-                    height: "100vh",
+                    height: "100%",
                     background: "rgba(23, 23, 23, 0.85)",
                     backdropFilter: "blur(30px)",
                     borderRight: "solid 2px #fff",

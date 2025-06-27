@@ -1,10 +1,19 @@
 
 import "./styleComponents/CardProduct.css"
-
-
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+ 
 function Cardproduct() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
     return (
-        <div className="containerCard"  style={{
+        <motion.div className="containerCard"
+            ref={ref}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+
+            style={{
             background: 'none', width: '250px', display: 'flex', flexDirection: 'column', borderRadius: '12px', overflow: 'hidden', justifyItems: "flex-start", height: '430px',
              fontFamily: 'Roboto', alignItems: 'center', position: 'relative', fontWeight: '900'
         }}>
@@ -63,7 +72,7 @@ function Cardproduct() {
                         />
                     </g>
                 </svg>            </button>
-        </div>
+        </motion.div>
     );
 
 
