@@ -77,6 +77,21 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/", () => "API funcionando correctamente! ---")
    .WithName("HealthCheck");
 app.MapGet("/test", () => "Endpoint test funciona!");
+app.MapGet("/test-db", () =>
+{
+    try
+    {
+        var host = Environment.GetEnvironmentVariable("PGHOST");
+        var database = Environment.GetEnvironmentVariable("PGDATABASE");
+        var user = Environment.GetEnvironmentVariable("PGUSER");
+
+        return $"Variables BD: HOST={host}, DB={database}, USER={user}";
+    }
+    catch (Exception ex)
+    {
+        return $" Error: {ex.Message}";
+    }
+});
 
 // Configurar puerto para Railway
 var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "5432";
@@ -97,21 +112,7 @@ app.UseAuthorization();
 
 
 
-app.MapGet("/test-db", () =>
-{
-    try
-    {
-        var host = Environment.GetEnvironmentVariable("PGHOST");
-        var database = Environment.GetEnvironmentVariable("PGDATABASE");
-        var user = Environment.GetEnvironmentVariable("PGUSER");
 
-        return $"Variables BD: HOST={host}, DB={database}, USER={user}";
-    }
-    catch (Exception ex)
-    {
-        return $" Error: {ex.Message}";
-    }
-});
 
 app.MapControllers();
 
