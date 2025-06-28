@@ -78,7 +78,7 @@ app.MapGet("/", () => "API funcionando correctamente!")
    .WithName("HealthCheck");
 
 // Configurar puerto para Railway
-var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "5432";
 if (!app.Environment.IsDevelopment())
 {
     app.Urls.Add($"http://0.0.0.0:{portLocal}");
