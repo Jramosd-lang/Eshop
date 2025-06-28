@@ -96,12 +96,15 @@ app.UseAuthorization();
 
 
 
-app.MapGet("/test-db", async (EcomerceContext context) =>
+app.MapGet("/test-db", () =>
 {
     try
     {
-        var canConnect = await context.Database.CanConnectAsync();
-        return canConnect ? "Conexión exitosa" : "No se puede conectar";
+        var host = Environment.GetEnvironmentVariable("PGHOST");
+        var database = Environment.GetEnvironmentVariable("PGDATABASE");
+        var user = Environment.GetEnvironmentVariable("PGUSER");
+
+        return $"Variables BD: HOST={host}, DB={database}, USER={user}";
     }
     catch (Exception ex)
     {
