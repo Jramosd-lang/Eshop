@@ -6,7 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -16,13 +15,21 @@ if (builder.Environment.IsDevelopment())
     // Desarrollo: SQL Server local
     builder.Services.AddDbContext<EcomerceContext>(options =>
     {
-        options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
     });
 }
 else
 {
     // Producción: PostgreSQL en Railway
-    var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
+    // Primero intenta obtener de variable de entorno DATABASE_URL, si no existe usa RailwayConnection del appsettings
+    var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL")
+                          ?? builder.Configuration.GetConnectionString("RailwayConnection");
+
+    if (string.IsNullOrEmpty(connectionString))
+    {
+        throw new InvalidOperationException("No se encontró cadena de conexión para producción");
+    }
+
     builder.Services.AddDbContext<EcomerceContext>(options =>
     {
         options.UseNpgsql(connectionString);
@@ -69,7 +76,12 @@ if (!app.Environment.IsDevelopment())
     app.Urls.Add($"http://0.0.0.0:{port}");
 }
 
-app.UseHttpsRedirection();
+// Remover UseHttpsRedirection en producción ya que Railway maneja esto
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
 app.UseCors("AllowSpecificOrigins");
 app.UseAuthorization();
 app.MapControllers();
