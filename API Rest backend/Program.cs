@@ -94,7 +94,7 @@ app.Run();
 app.UseCors("AllowSpecificOrigins");
 app.UseAuthorization();
 
-app.MapGet("/", () => "API funcionando correctamente!");
+
 
 app.MapGet("/test-db", async (EcomerceContext context) =>
 {
