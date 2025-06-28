@@ -74,7 +74,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // HealthCheck
-app.MapGet("/", () => "API funcionando correctamente!")
+app.MapGet("/", () => "API funcionando correctamente! ---")
    .WithName("HealthCheck");
 
 // Configurar puerto para Railway
