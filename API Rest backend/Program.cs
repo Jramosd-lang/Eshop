@@ -93,6 +93,21 @@ app.MapGet("/test-db", () =>
     }
 });
 
+app.MapGet("/test-connection", async (IServiceProvider services) => {
+    try
+    {
+        using var scope = services.CreateScope();
+        var context = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
+        var canConnect = await context.Database.CanConnectAsync();
+        return canConnect ? "Conexión a BD exitosa!" : " No se puede conectar a BD";
+    }
+    catch (Exception ex)
+    {
+        return $" Error de conexión: {ex.Message}";
+    }
+});
+
+
 // Configurar puerto para Railway
 var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "5432";
 if (!app.Environment.IsDevelopment())
