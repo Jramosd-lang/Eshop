@@ -93,6 +93,22 @@ app.Run();
 
 app.UseCors("AllowSpecificOrigins");
 app.UseAuthorization();
+
+app.MapGet("/", () => "API funcionando correctamente!");
+
+app.MapGet("/test-db", async (EcomerceContext context) =>
+{
+    try
+    {
+        var canConnect = await context.Database.CanConnectAsync();
+        return canConnect ? "Conexión exitosa" : "No se puede conectar";
+    }
+    catch (Exception ex)
+    {
+        return $" Error: {ex.Message}";
+    }
+});
+
 app.MapControllers();
 
 app.Run();
