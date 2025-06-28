@@ -1,25 +1,30 @@
-# Etapa de compilación
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+# Consulte https://aka.ms/customizecontainer para aprender a personalizar su contenedor de depuración y cómo Visual Studio usa este Dockerfile para compilar sus imágenes para una depuración más rápida.
 
-# Copia todos los archivos al contenedor
-COPY . ./
-
-# Restaura paquetes NuGet
-RUN dotnet restore "Backend.csproj"
-
-# Publica la aplicación en modo Release
-RUN dotnet publish "Backend.csproj" -c Release -o /app/publish
-
-# Etapa final: contenedor ligero de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+# Esta fase se usa cuando se ejecuta desde VS en modo rápido (valor predeterminado para la configuración de depuración)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
 WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
 
-# Copia los archivos publicados desde el contenedor anterior
-COPY --from=build /app/publish .
 
-# Exponer el puerto por defecto
-EXPOSE 80
+# Esta fase se usa para compilar el proyecto de servicio
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["DeployRailway.csproj", "."]
+RUN dotnet restore "./DeployRailway.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "./DeployRailway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Iniciar la aplicación
-ENTRYPOINT ["dotnet", "Backend.dll"]
+# Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./DeployRailway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# Esta fase se usa en producción o cuando se ejecuta desde VS en modo normal (valor predeterminado cuando no se usa la configuración de depuración)
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "DeployRailway.dll"]
