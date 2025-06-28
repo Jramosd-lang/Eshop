@@ -76,6 +76,7 @@ if (app.Environment.IsDevelopment())
 // HealthCheck
 app.MapGet("/", () => "API funcionando correctamente! ---")
    .WithName("HealthCheck");
+app.MapGet("/test", () => "Endpoint test funciona!");
 
 // Configurar puerto para Railway
 var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "5432";
