@@ -68,8 +68,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-else
-{
+
 else
     {
         // Producción: PostgreSQL en Railway
@@ -92,7 +91,7 @@ else
             options.UseNpgsql(connectionString);
         });
     }
-}
+
 
 // Y agregar esta ruta de prueba:
 app.MapGet("/", () => "API funcionando correctamente!")
@@ -100,10 +99,10 @@ app.MapGet("/", () => "API funcionando correctamente!")
 
 
 // Configurar puerto para Railway
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 if (!app.Environment.IsDevelopment())
 {
-    app.Urls.Add($"http://0.0.0.0:{port}");
+    app.Urls.Add($"http://0.0.0.0:{portLocal}");
 }
 
 // Remover UseHttpsRedirection en producción ya que Railway maneja esto
