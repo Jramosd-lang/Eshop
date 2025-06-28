@@ -19,27 +19,20 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    // Railway: intenta primero con DATABASE_URL, luego con RailwayConnection, luego con variables individuales
-    var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL")
-        ?? builder.Configuration.GetConnectionString("RailwayConnection");
+    // Usar DATABASE_URL que ya incluye todo
+    var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 
-    if (string.IsNullOrEmpty(connectionString))
+    if (!string.IsNullOrEmpty(databaseUrl))
     {
-        // Construir manualmente la cadena si no existe ninguna
-        var host = Environment.GetEnvironmentVariable("PGHOST");
-        var port = Environment.GetEnvironmentVariable("PGPORT") ?? "8080";
-        var database = Environment.GetEnvironmentVariable("PGDATABASE");
-        var username = Environment.GetEnvironmentVariable("PGUSER");
-        var password = Environment.GetEnvironmentVariable("PGPASSWORD");
-
-        if (string.IsNullOrEmpty(host) || string.IsNullOrEmpty(database))
-            throw new InvalidOperationException("Variables de base de datos no encontradas");
-
-        connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+        builder.Services.AddDbContext<EcomerceContext>(options =>
+        {
+            options.UseNpgsql(databaseUrl);
+        });
     }
-
-    builder.Services.AddDbContext<EcomerceContext>(options =>
-        options.UseNpgsql(connectionString));
+    else
+    {
+        throw new InvalidOperationException("DATABASE_URL no encontrada");
+    }
 }
 
 // CORS
