@@ -70,12 +70,28 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
+else
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
-        c.RoutePrefix = "swagger";
-    });
+        // Producción: PostgreSQL en Railway
+        // Railway proporciona estas variables automáticamente
+        var host = Environment.GetEnvironmentVariable("PGHOST");
+        var port = Environment.GetEnvironmentVariable("PGPORT") ?? "5432";
+        var database = Environment.GetEnvironmentVariable("PGDATABASE");
+        var username = Environment.GetEnvironmentVariable("PGUSER");
+        var password = Environment.GetEnvironmentVariable("PGPASSWORD");
+
+        var connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+
+        if (string.IsNullOrEmpty(host) || string.IsNullOrEmpty(database))
+        {
+            throw new InvalidOperationException("Variables de base de datos no encontradas");
+        }
+
+        builder.Services.AddDbContext<EcomerceContext>(options =>
+        {
+            options.UseNpgsql(connectionString);
+        });
+    }
 }
 
 // Y agregar esta ruta de prueba:
