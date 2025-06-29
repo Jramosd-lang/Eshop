@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4WJBl5QTujc=",
+  "dgSpecHash": "+adv/reqA6I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jr10p\\Source\\Repos\\EshopGIT\\API Rest backend\\Backend.csproj",
+  "projectFilePath": "C:\\Users\\jr10p\\Eshop\\API Rest backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jr10p\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jr10p\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

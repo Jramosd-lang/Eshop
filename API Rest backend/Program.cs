@@ -6,36 +6,26 @@ using EcomerceContext = API_Rest_backend.Models.EcomerceContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Servicios básicos
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configuración de base de datos
+var connection = String.Empty;
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddDbContext<EcomerceContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
 }
 else
 {
-    // Usar DATABASE_URL que ya incluye todo
-    var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
-
-    if (!string.IsNullOrEmpty(databaseUrl))
-    {
-        builder.Services.AddDbContext<EcomerceContext>(options =>
-        {
-            options.UseNpgsql(databaseUrl);
-        });
-    }
-    else
-    {
-        throw new InvalidOperationException("DATABASE_URL no encontrada");
-    }
+    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
 }
 
-// CORS
+builder.Services.AddDbContext<EcomerceContext>(options =>
+    options.UseSqlServer(connection));
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins", policy =>
@@ -92,11 +82,11 @@ app.MapGet("/test-connection", async (IServiceProvider services) => {
         using var scope = services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
         var canConnect = await context.Database.CanConnectAsync();
-        return canConnect ? "Conexión a BD exitosa!" : " No se puede conectar a BD";
+        return canConnect ? "Conexiï¿½n a BD exitosa!" : " No se puede conectar a BD";
     }
     catch (Exception ex)
     {
-        return $" Error de conexión: {ex.Message}";
+        return $" Error de conexiï¿½n: {ex.Message}";
     }
 });
 
