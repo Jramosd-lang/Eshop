@@ -13,6 +13,24 @@ builder.Services.AddDbContext<EcomerceContext>(opciones => {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
   
+        {
+            options.UseNpgsql(databaseUrl);
+        });
+    }
+    else
+    {
+        throw new InvalidOperationException("DATABASE_URL no encontrada");
+    }
+}
+        {
+            options.UseNpgsql(databaseUrl);
+        });
+    }
+    else
+    {
+        throw new InvalidOperationException("DATABASE_URL no encontrada");
+    }
+}
 
 builder.Services.AddCors(options =>
 {
@@ -38,7 +56,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Migraci髇 de BD (con manejo de errores)
+// Migraci贸n de BD (con manejo de errores)
 try
 {
     using (var scope = app.Services.CreateScope())
@@ -52,11 +70,11 @@ try
 }
 catch (Exception ex)
 {
-    // Log el error pero no fallar la aplicaci髇
-    Console.WriteLine($"Error en migraci髇: {ex.Message}");
+    // Log el error pero no fallar la aplicaci贸n
+    Console.WriteLine($"Error en migraci贸n: {ex.Message}");
 }
 
-// Swagger (habilitar temporalmente en producci髇 para diagn髎tico)
+// Swagger (habilitar temporalmente en producci贸n para diagn贸stico)
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
@@ -89,11 +107,11 @@ app.MapGet("/test-connection", async (IServiceProvider services) => {
         using var scope = services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
         var canConnect = await context.Database.CanConnectAsync();
-        return canConnect ? "Conexi髇 a BD exitosa!" : "No se puede conectar a BD";
+        return canConnect ? "Conexi贸n a BD exitosa!" : " No se puede conectar a BD";
     }
     catch (Exception ex)
     {
-        return $"Error de conexi髇: {ex.Message}";
+        return $" Error de conexi贸n: {ex.Message}";
     }
 });
 
