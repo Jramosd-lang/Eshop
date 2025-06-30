@@ -128,7 +128,7 @@ a{
     height: 1lh;
 }
 
-/* Soporte para mostrar el botón de revelar contraseña en Edge y Chrome */
+/* Soporte para mostrar el botï¿½n de revelar contraseï¿½a en Edge y Chrome */
 input[type="password"]::-ms-reveal {
     filter: invert(1);
 }
@@ -267,6 +267,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: all ease 0.25s;
 }
 
     .section-button-session button:hover {

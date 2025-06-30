@@ -108,6 +108,7 @@ function Home() {
 
 
                 <section className="productsTOP" >
+
                     <div>
                         <h3 className="subtitle">Mejores <span>Productos</span></h3>
                     </div>
@@ -117,6 +118,7 @@ function Home() {
                         width: '80vw', display: 'flex', flexWrap: 'wrap', gap: '60px', justifyContent: 'center', alignItems: 'center',
                         maxWidth: '100vw', height:'fit-content',paddingBottom:'70px'
                     }}>
+                        
                         <Cardproduct />
                         <Cardproduct />
                         <Cardproduct />
@@ -125,7 +127,11 @@ function Home() {
                     </div>
 
                 </section>
- 
+
+            
+                <section className=''>
+
+                </section>
                 
             </div>
         </div>

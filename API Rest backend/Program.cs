@@ -15,11 +15,11 @@ var connection = String.Empty;
 if (builder.Environment.IsDevelopment())
 {
     builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
-    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+    connection = builder.Configuration.GetConnectionString("DefaultConnection");
 }
 else
 {
-    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+    connection = Environment.GetEnvironmentVariable("DefaultConnection");
 }
 
 builder.Services.AddDbContext<EcomerceContext>(options =>
@@ -82,11 +82,11 @@ app.MapGet("/test-connection", async (IServiceProvider services) => {
         using var scope = services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
         var canConnect = await context.Database.CanConnectAsync();
-        return canConnect ? "Conexi�n a BD exitosa!" : " No se puede conectar a BD";
+        return canConnect ? "Conexión a BD exitosa!" : " No se puede conectar a BD";
     }
     catch (Exception ex)
     {
-        return $" Error de conexi�n: {ex.Message}";
+        return $" Error de conexión: {ex.Message}";
     }
 });
 

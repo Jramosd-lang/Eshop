@@ -10,6 +10,24 @@ header li,a{
 .menu{
     width: fit-content;
 }
+.logo{
+    background: linear-gradient(to bottom right, #1c704a,#28b0bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-container{
+    background: linear-gradient(to bottom right, #00723f, #00525b);
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content:center;
+    width: fit-content;
+    height: fit-content;
+}
 
 @media only screen and (max-width: 650px) {
     .logoSVG {
@@ -95,13 +113,13 @@ button:hover a{
 .optionsHeader {
     margin: 0;
     align-content: center;
-
     text-align: center;
+    border-radius: 8px;
 }
 
 
     li:hover {
-        background-color: #3b3c54;
+        background-color: #262d2c;
     }
 
 

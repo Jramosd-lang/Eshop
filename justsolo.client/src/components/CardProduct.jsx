@@ -7,19 +7,20 @@ function Cardproduct() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
     return (
-        <motion.div className="containerCard"
+        <motion.div 
             ref={ref}
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ type: "tween", duration: 0.3, ease: "linear" }}
+            style={{width:'fit-content', height:'fit-content', position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center'}}
+        >
 
-            style={{
-            background: 'none', width: '250px', display: 'flex', flexDirection: 'column', borderRadius: '12px', overflow: 'hidden', justifyItems: "flex-start", height: '430px',
+        <div className="containerCard" style={{
+            backgroundColor:'#262626',
+            width: '250px', display: 'flex', flexDirection: 'column', overflow: 'hidden', justifyItems: "flex-start", height: '430px',
              fontFamily: 'Roboto', alignItems: 'center', position: 'relative', fontWeight: '900'
         }}>
-
-
-            <div style={{height:'fit-content'} }>
+                                <div style={{height:'fit-content'} }>
                 <img className="img" src="/Resources/prueba.jpg" style={{ width: '250px'}} />
 
             </div>
@@ -38,7 +39,10 @@ function Cardproduct() {
                             stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                     </g>
                 </svg>
-            </svg> COMPRAR</button>
+            </svg>
+             COMPRAR
+            
+            </button>
             <button
                 className="buttonFavorite"
 
@@ -60,7 +64,7 @@ function Cardproduct() {
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    style={{ color: 'currentColor' }} // Asegura que el SVG use el color del botón
+                    style={{ color: 'currentColor' }} // Asegura que el SVG use el color del botï¿½n
                 >
                     <g id="SVGRepo_iconCarrier">
                         <path
@@ -72,6 +76,8 @@ function Cardproduct() {
                         />
                     </g>
                 </svg>            </button>
+            </div>
+
         </motion.div>
     );
 

@@ -6,7 +6,7 @@
     cursor: pointer;
     border: 0px;
     font-weight: 600;
-    transition: background-color ease 0.25s, color ease 0.25s;
+    transition: all ease 0.25s;
     width: 90%;
     display: flex;
     gap: 5px;
@@ -17,7 +17,11 @@
     .botonCompra svg {
         width: 20px;
         height: 20px;
-        transition: all ease 0.25s;
+
+    }
+    .botonCompra:hover {
+
+        color: #212121;
     }
 
 
@@ -46,13 +50,11 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
     border-radius: 15px;
     transition: all ease 0.25s;
-    outline: 0 solid;
-}
+    }
 
 .containerCard:hover{
     transform: scale(1.025);
 }
-
 
 
     img:hover~ .buttonFavorite {
