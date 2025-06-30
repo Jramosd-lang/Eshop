@@ -22,12 +22,12 @@ namespace API_Rest_backend.Controllers
 
         [HttpGet]
         [Route("GetUser")]
-        public async Task<ActionResult<IEnumerable<Boolean>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
             try
             {
                 var usuarios = await context.Usuarios.ToListAsync();
-                return Ok(true);
+                return Ok(usuarios);
             }
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace API_Rest_backend.Controllers
         {
             try
             {
-                if(!string.IsNullOrWhiteSpace(login.correo) && !string.IsNullOrWhiteSpace(login.clave))
+                if (!string.IsNullOrWhiteSpace(login.correo) && !string.IsNullOrWhiteSpace(login.clave))
                 {
                     var usuario = await context.Usuarios.FirstOrDefaultAsync(p => p.Correo == login.correo && p.Clave == login.clave);
 
@@ -59,17 +59,15 @@ namespace API_Rest_backend.Controllers
                     }
 
                     return Ok(usuario);
-
-
                 }
                 else
                 {
                     return BadRequest("Rellene todos los campos");
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error al loguear: {ex.Message}");
-
             }
         }
 
@@ -115,7 +113,7 @@ namespace API_Rest_backend.Controllers
 
         [HttpPut]
         [Route("UpdateUser/{id:int}")]
-        public async Task<IActionResult> Modificar([FromBody] Usuario user)
+        public async Task<ActionResult<Usuario>> Modificar([FromBody] Usuario user)
         {
             if (user == null)
             {
@@ -134,7 +132,7 @@ namespace API_Rest_backend.Controllers
                 usuarioExistente.Clave = user.Clave;
                 context.Usuarios.Update(usuarioExistente);
                 await context.SaveChangesAsync();
-                return NoContent();
+                return Ok(usuarioExistente);
             }
             catch (Exception ex)
             {
@@ -145,7 +143,7 @@ namespace API_Rest_backend.Controllers
 
         [HttpDelete]
         [Route("DeleteUser/{id:int}")]
-        public async Task<IActionResult> Eliminar(int id)
+        public async Task<ActionResult<Usuario>> Eliminar(int id)
         {
             try
             {
@@ -156,7 +154,7 @@ namespace API_Rest_backend.Controllers
                 }
                 context.Usuarios.Remove(usuario);
                 await context.SaveChangesAsync();
-                return NoContent();
+                return Ok(usuario);
             }
             catch (Exception ex)
             {

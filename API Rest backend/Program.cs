@@ -1,5 +1,3 @@
-
-
 using API_Rest_backend.Models;
 using Microsoft.EntityFrameworkCore;
 using EcomerceContext = API_Rest_backend.Models.EcomerceContext;
@@ -11,29 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configuración de base de datos
-if (builder.Environment.IsDevelopment())
-{
-    builder.Services.AddDbContext<EcomerceContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-}
-else
-{
-    // Usar DATABASE_URL que ya incluye todo
-    var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
-
-    if (!string.IsNullOrEmpty(databaseUrl))
-    {
-        builder.Services.AddDbContext<EcomerceContext>(options =>
-        {
-            options.UseNpgsql(databaseUrl);
-        });
-    }
-    else
-    {
-        throw new InvalidOperationException("DATABASE_URL no encontrada");
-    }
-}
+builder.Services.AddDbContext<EcomerceContext>(opciones => {
+    opciones.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 // CORS
 builder.Services.AddCors(options =>
@@ -49,7 +27,8 @@ builder.Services.AddCors(options =>
         }
         else
         {
-            policy.WithOrigins("eshop-lm8q-qdsm25kln-jefersons-projects-64262c4d.vercel.app")
+            // Corregir URL de Vercel (agregar https://)
+            policy.WithOrigins("https://eshop-lm8q-qdsm25kln-jefersons-projects-64262c4d.vercel.app")
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials();
@@ -59,8 +38,26 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Swagger solo en desarrollo
-if (app.Environment.IsDevelopment())
+// Migración de BD (con manejo de errores)
+try
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbcontext = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
+        if (dbcontext.Database.IsRelational())
+        {
+            dbcontext.Database.Migrate();
+        }
+    }
+}
+catch (Exception ex)
+{
+    // Log el error pero no fallar la aplicación
+    Console.WriteLine($"Error en migración: {ex.Message}");
+}
+
+// Swagger (habilitar temporalmente en producción para diagnóstico)
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -69,20 +66,20 @@ if (app.Environment.IsDevelopment())
 // HealthCheck
 app.MapGet("/", () => "API funcionando correctamente! ---")
    .WithName("HealthCheck");
+
 app.MapGet("/test", () => "Endpoint test funciona!");
+
 app.MapGet("/test-db", () =>
 {
     try
     {
-        var host = Environment.GetEnvironmentVariable("PGHOST");
-        var database = Environment.GetEnvironmentVariable("PGDATABASE");
-        var user = Environment.GetEnvironmentVariable("PGUSER");
-
-        return $"Variables BD: HOST={host}, DB={database}, USER={user}";
+        // Corregir para SQL Server
+        var connectionString = app.Configuration.GetConnectionString("DefaultConnection");
+        return $"Connection String configurado: {!string.IsNullOrEmpty(connectionString)}";
     }
     catch (Exception ex)
     {
-        return $" Error: {ex.Message}";
+        return $"Error: {ex.Message}";
     }
 });
 
@@ -92,36 +89,18 @@ app.MapGet("/test-connection", async (IServiceProvider services) => {
         using var scope = services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<EcomerceContext>();
         var canConnect = await context.Database.CanConnectAsync();
-        return canConnect ? "Conexión a BD exitosa!" : " No se puede conectar a BD";
+        return canConnect ? "Conexión a BD exitosa!" : "No se puede conectar a BD";
     }
     catch (Exception ex)
     {
-        return $" Error de conexión: {ex.Message}";
+        return $"Error de conexión: {ex.Message}";
     }
 });
 
-
-// Configurar puerto para Railway
-var portLocal = Environment.GetEnvironmentVariable("PORT") ?? "5432";
-if (!app.Environment.IsDevelopment())
-{
-    app.Urls.Add($"http://0.0.0.0:{portLocal}");
-}
-
+// Middleware pipeline
 app.UseCors("AllowSpecificOrigins");
 app.UseAuthorization();
 app.MapControllers();
 
-app.Run();
-
-
-app.UseCors("AllowSpecificOrigins");
-app.UseAuthorization();
-
-
-
-
-
-app.MapControllers();
-
+// Solo una llamada a Run()
 app.Run();
