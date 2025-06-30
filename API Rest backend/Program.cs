@@ -4,7 +4,7 @@ using EcomerceContext = API_Rest_backend.Models.EcomerceContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Servicios básicos
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -12,8 +12,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EcomerceContext>(opciones => {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+  
 
-// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins", policy =>
