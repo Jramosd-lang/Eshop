@@ -1,5 +1,8 @@
 /* index.css */
 
+* {
+  box-sizing: border-box;
+}
 
 
 :root {
@@ -94,6 +97,10 @@ body {
         .content-right {
             display: none !important;
         }
+
+        ::-webkit-scrollbar {
+        display: none;
+     }
 
         .content-left {
             margin-left: 0px !important;
