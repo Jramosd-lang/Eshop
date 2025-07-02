@@ -13,7 +13,7 @@ function Home() {
     const toggleSidebar = () => setMostrarSidebar(!mostrarSidebar);
 
     return (
-        <div>
+        <div className='containerHome'>
             {mostrarSpinner && (
                 <motion.div
                     className="container-spinner"
@@ -129,8 +129,21 @@ function Home() {
                 </section>
 
             
-                <section className=''>
-
+                <section className='sectionAbout'>
+                    <div className='methodsPaid'>
+                        <h3 className="subtitle">Métodos de <span>Pago</span></h3>
+                        <div className='methodsPaidContainer'>
+                        <div className='methodsPaidContent'>
+                            <img src="./public/Resources/nequi-3.svg" alt="" />
+                        </div>
+                        <div className='methodsPaidContent'>
+                            <img src="./public/Resources/transfiya-1.svg" alt="" />
+                        </div>
+                        </div>
+                    </div>
+                    <div className='plus'>
+                        <h3 className='subtitle'>Soporte y <span>beneficios</span></h3>
+                    </div>
                 </section>
                 
             </div>

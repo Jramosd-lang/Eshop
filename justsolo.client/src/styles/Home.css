@@ -99,8 +99,9 @@ body {
             margin-left: 0px !important;
             justify-content: center !important;
             align-items: center !important;
-            text-align: center;
+            text-align: center !important;
             margin-right: 0px !important;
+            padding-left: 0px !important;
         }
 
         .text-content{
@@ -119,6 +120,7 @@ body {
 
         .buttonsInfoEcommerce{
             justify-content: center;
+            width: 100%;
         }
 
         .content {
@@ -248,4 +250,59 @@ span {
     color: var(--primary-color);
 }
 
+.methodsPaid {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.methodsPaidContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+    height: fit-content;
+    margin-bottom: 1200px;
+
+}
+
+.methodsPaidContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    background-color: #b6b6b6;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.methodsPaidContent img {
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.sectionAbout{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.containerHome {
+
+    width: 100%;
+
+}
