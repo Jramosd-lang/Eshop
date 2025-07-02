@@ -21,7 +21,7 @@ function Header({ toggleSidebar }) {
             fontFamily: 'Roboto',
             position: 'absolute',
             zIndex:'3',
-            width: '100%',
+            width: '100vw',
             padding:' 0 10px'
         }}>
             
