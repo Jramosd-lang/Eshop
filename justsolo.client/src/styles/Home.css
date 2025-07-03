@@ -242,9 +242,9 @@ body {
     overflow: hidden;
     gap: 50px;
     justify-content: center;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.371) 25%, transparent 25%), linear-gradient(225deg, rgba(255, 255, 255, 0.371) 25%, transparent 25%);
-background-size: 20px 20px;
-background-color: #121212;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-color: #0e0e0e;
     padding-inline: 50px;
     align-items: center;
 }
@@ -320,8 +320,15 @@ span {
     display: grid;
     width: 80%;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 17px;
+}
+
+.parent span{
+    
+    background: linear-gradient(to bottom right, #1c704a,#28b0bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
     
 .div1 {
@@ -330,53 +337,73 @@ span {
     border-radius: 12px;
     align-content: center;
     justify-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.div3 {
+.div2 {
     grid-column: span 4 / span 4;
-        background-color: #10b981;
+    background-color: #f6f1f12e;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
     border-radius: 12px;
     grid-row: span 2 / span 2;
 }
 
-.div6 {
-        background-color: #10b981;
+.div2 span{
+    
+    font-weight: 700;
+    backdrop-filter: box-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.div3 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-color: #0e0e0e;
     border-radius: 12px;
     grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 
+                0 0 10px rgba(0, 0, 0, 0.5);
+    grid-row: span 8 / span 8;
     grid-row-start: 3;
 }
 
-.div7 {    
-    background-color: #10b981;
+.div4 {    
+    background-color: #f1f1f1;
     border-radius: 12px;
+    grid-row: span 2/span 2;
     grid-column: span 3 / span 3;
     grid-column-start: 3;
     grid-row-start: 3;
 }
 
-.div8 {
-    background-color: #10b981;
+.div5 {
+    background-color: #ffffff;
     border-radius: 12px;
     grid-column: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
-
-.div9 {
-    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 5;
-    background-color: #10b981;
+}
+
+.div6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 7;
+    grid-row: span 2 / span 2;
+    background-color: #ffffff;
     border-radius: 12px;
 }
 
-.div10 {
+.div7 {
     grid-column: span 3 / span 3;
     grid-column-start: 3;
-    background-color: #10b981;
+    grid-row: span 2 / span 2;
+    background-color: #ffffff;
     border-radius: 12px;
-    grid-row-start: 6;
+    grid-row-start: 9;
 }
         
 .benefits{

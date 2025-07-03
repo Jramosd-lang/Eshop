@@ -138,12 +138,12 @@ function Home() {
                                 <h1>{"<Beneficios>"}</h1>
                             </div>
                         </div>
+                        <div className="div2"><h3>¡Envio <span>gratis</span> para compras mayores a 100.000 COP!</h3></div>
                         <div className="div3"></div>
+                        <div className="div4"></div>
+                        <div className="div5"></div>
                         <div className="div6"></div>
                         <div className="div7"></div>
-                        <div className="div8"></div>
-                        <div className="div9"></div>
-                        <div className="div10"></div>
                     </div>
     
                 </section>
