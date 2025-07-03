@@ -401,7 +401,7 @@ span {
     grid-column: span 3 / span 3;
     grid-column-start: 3;
     grid-row: span 2 / span 2;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom right, #1c704a,#28b0bf);
     border-radius: 12px;
     grid-row-start: 9;
 }
