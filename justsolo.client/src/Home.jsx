@@ -129,21 +129,23 @@ function Home() {
                 </section>
 
             
-                <section className='sectionAbout'>
-                    <div className='methodsPaid'>
-                        <h3 className="subtitle">Métodos de <span>Pago</span></h3>
-                        <div className='methodsPaidContainer'>
-                        <div className='methodsPaidContent'>
-                            <img src="./public/Resources/nequi-3.svg" alt="" />
+                <section className='benefits'>
+                    <h3 className='subtitle'>Beneficios de comprar con <span>nosotros</span></h3>
+                    
+                    <div className="parent">
+                        <div className="div1">
+                            <div className="logo-container-home">
+                                <h1>{"<Beneficios>"}</h1>
+                            </div>
                         </div>
-                        <div className='methodsPaidContent'>
-                            <img src="./public/Resources/transfiya-1.svg" alt="" />
-                        </div>
-                        </div>
+                        <div className="div3"></div>
+                        <div className="div6"></div>
+                        <div className="div7"></div>
+                        <div className="div8"></div>
+                        <div className="div9"></div>
+                        <div className="div10"></div>
                     </div>
-                    <div className='plus'>
-                        <h3 className='subtitle'>Soporte y <span>beneficios</span></h3>
-                    </div>
+    
                 </section>
                 
             </div>

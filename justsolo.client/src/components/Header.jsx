@@ -42,24 +42,30 @@ function Header({ toggleSidebar }) {
                 </svg>
             </button>
 
-            <div className="logo-container" onClick={() => navigate("/home")}>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                stroke-linecap="round" 
-                stroke-linejoin="round" 
-                class="code-icon" 
-                aria-hidden="true">
-                    <path d="m16 18 6-6-6-6"></path>
-                     <path d="m8 6-6 6 6 6"></path>
-            </svg>
-            </div> 
+            
+            <div className="logoHeader" style={{ display: 'flex', alignItems: 'center', marginLeft: '10px',marginRight:'auto' }}>
+                <div className="logo-container" onClick={() => navigate("/home")}>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="code-icon" 
+                    aria-hidden="true">
+                        <path d="m16 18 6-6-6-6"></path>
+                        <path d="m8 6-6 6 6 6"></path>
+                     </svg>
+                </div> 
+                <div className="logo-text-container">
+                     <a className="logo" style={{marginRight: 'auto', fontWeight: '900',fontSize:'25px', cursor: 'pointer'}}>ECOMMERCE</a>
 
-            <a className="logo" style={{marginRight: 'auto', fontWeight: '900',fontSize:'25px', cursor: 'pointer'}}>ECOMMERCE</a>
+                </div>
+
+            </div>
 
             <ul className="flex-gap-style">
                 <li className="optionsHeader">Ofertas</li>

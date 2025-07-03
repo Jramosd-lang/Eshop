@@ -242,8 +242,9 @@ body {
     overflow: hidden;
     gap: 50px;
     justify-content: center;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.371) 1px, #121212 1px);
-    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.371) 25%, transparent 25%), linear-gradient(225deg, rgba(255, 255, 255, 0.371) 25%, transparent 25%);
+background-size: 20px 20px;
+background-color: #121212;
     padding-inline: 50px;
     align-items: center;
 }
@@ -312,4 +313,90 @@ span {
 
     width: 100%;
 
+}
+
+
+.parent {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 17px;
+}
+    
+.div1 {
+    grid-row: span 2 / span 2;
+    background-color: #0000003d;
+    border-radius: 12px;
+    align-content: center;
+    justify-items: center;
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+        background-color: #10b981;
+    border-radius: 12px;
+    grid-row: span 2 / span 2;
+}
+
+.div6 {
+        background-color: #10b981;
+    border-radius: 12px;
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 3;
+}
+
+.div7 {    
+    background-color: #10b981;
+    border-radius: 12px;
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div8 {
+    background-color: #10b981;
+    border-radius: 12px;
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div9 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+    background-color: #10b981;
+    border-radius: 12px;
+}
+
+.div10 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    background-color: #10b981;
+    border-radius: 12px;
+    grid-row-start: 6;
+}
+        
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding: 50px 0;
+    gap: 45px;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.logo-container-home {
+    background: linear-gradient(to bottom right, #1c704a,#28b0bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

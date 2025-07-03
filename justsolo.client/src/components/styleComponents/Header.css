@@ -5,12 +5,18 @@ header li,a{
     background-color:transparent;
     padding: 8px;
     cursor: pointer;
+    align-items: center;
 }
+
+
+
 
 .menu{
     width: fit-content;
 }
 .logo{
+    text-align: center;
+    justify-content: center;
     background: linear-gradient(to bottom right, #1c704a,#28b0bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
