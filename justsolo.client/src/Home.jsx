@@ -130,7 +130,6 @@ function Home() {
 
             
                 <section className='benefits'>
-                    <h3 className='subtitle'>Beneficios de comprar con <span>nosotros</span></h3>
                     
                     <div className="parent">
                         <div className="div1">
