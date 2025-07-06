@@ -20,6 +20,12 @@ header li,a{
     background: linear-gradient(to bottom right, #1c704a,#28b0bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: rotateBackground 4s linear infinite;
+}
+
+@keyframes rotateBackground {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .logo-container{

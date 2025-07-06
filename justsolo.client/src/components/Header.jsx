@@ -60,6 +60,9 @@ function Header({ toggleSidebar }) {
                         <path d="m8 6-6 6 6 6"></path>
                      </svg>
                 </div> 
+                <div className="logo">
+
+                </div>
                 <div className="logo-text-container">
                      <a className="logo" style={{marginRight: 'auto', fontWeight: '900',fontSize:'25px', cursor: 'pointer'}}>ECOMMERCE</a>
 

@@ -134,11 +134,13 @@ function Home() {
                     <div className="parent">
                         <div className="div1">
                             <div className="logo-container-home">
-                                <h1>{"<Beneficios>"}</h1>
                             </div>
                         </div>
                         <div className="div2"><h3>¡Envio <span>gratis</span> para compras mayores a 100.000 COP!</h3></div>
-                        <div className="div3"></div>
+                        <div className="div3">
+                            <div className="circleOffert"><h2>%</h2></div>
+                            <h3>Descuentos exclusivos para clientes frecuentes</h3>
+                        </div>
                         <div className="div4"></div>
                         <div className="div5"></div>
                         <div className="div6"></div>
