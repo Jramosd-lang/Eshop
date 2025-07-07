@@ -131,22 +131,32 @@ function Home() {
             
                 <section className='benefits'>
                     
-                    <div className="parent">
-                        <div className="div1">
-                            <div className="logo-container-home">
+                    <div>
+                        <h3 className="subtitle">Beneficios de <span>ser cliente</span></h3>
+                    </div>
+
+                    <div className='benefits-container'>
+                        <div className='benefits-left'>
+                            <div className='circle-benefits'>
+                                %
+                            </div>
+                            <h2>Descuentos para nuestros <span>miembros</span></h2>
+                        </div>
+                        <div className='benefits-right'>
+                            <div className='benefits-item'>
+                                <h2>Acceso a promociones exclusivas</h2>
+                            </div>
+                            <div className='benefits-item'>
+                                <h2>Atención al cliente personalizada</h2>
+                            </div>
+                            <div className='benefits-item'>
+                                <h2>Envíos gratis en compras mayores a $100</h2>
+                            </div>
+                            <div className='benefits-item'>
+                                <h2>Acceso anticipado a nuevos productos</h2>
                             </div>
                         </div>
-                        <div className="div2"><h3>¡Envio <span>gratis</span> para compras mayores a 100.000 COP!</h3></div>
-                        <div className="div3">
-                            <div className="circleOffert"><h2>%</h2></div>
-                            <h3>Descuentos exclusivos para clientes frecuentes</h3>
-                        </div>
-                        <div className="div4"></div>
-                        <div className="div5"></div>
-                        <div className="div6"></div>
-                        <div className="div7"></div>
                     </div>
-    
                 </section>
                 
             </div>
