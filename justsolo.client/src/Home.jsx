@@ -132,7 +132,7 @@ function Home() {
                 <section className='benefits'>
                     
                     <div>
-                        <h3 className="subtitle">Beneficios de <span>ser cliente</span></h3>
+                        <h3 className="subtitle-blue">Beneficios de <span>ser cliente</span></h3>
                     </div>
 
                     <div className='benefits-container'>
@@ -144,16 +144,16 @@ function Home() {
                         </div>
                         <div className='benefits-right'>
                             <div className='benefits-item'>
-                                <h2>Acceso a promociones exclusivas</h2>
+                                <h3>Acceso a promociones <span>exclusivas</span></h3>
                             </div>
                             <div className='benefits-item'>
-                                <h2>Atención al cliente personalizada</h2>
+                                <h3>Atención al cliente <span>personalizada</span></h3>
                             </div>
                             <div className='benefits-item'>
-                                <h2>Envíos gratis en compras mayores a $100</h2>
+                                <h3>Envíos gratis en compras mayores a <span>$100</span></h3>
                             </div>
                             <div className='benefits-item'>
-                                <h2>Acceso anticipado a nuevos productos</h2>
+                                <h3>Acceso anticipado a nuevos <span>productos</span></h3>
                             </div>
                         </div>
                     </div>

@@ -192,7 +192,7 @@ body {
 }
 
 .subtitle{
-    font-size: 35px;
+    font-size: 2.5rem;
     margin-bottom:-20px;
 }
 
@@ -233,6 +233,7 @@ body {
 
 .productsTOP {
     text-align: center;
+    hight: ;
     width: 100vw;
     padding: 0;
     display: flex;
@@ -250,26 +251,31 @@ body {
 
 
 
-span {
-    color: var(--primary-color);
-}
+
 
 .benefits{
+    background: linear-gradient(to right, #111111, #1a1a1a);
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 90px;
-    margin-top: 40px;
 }
 
 .benefits h2{
-    font-weight:700;
+    margin-top: 60px;
+    font-weight:500;
+    color: #b8ffe4;
     margin-bottom: 0;
     text-align: center;
 }
 
+
 .benefits h2 span{
-    font-weight: 700;
+    color: #03c197;
+    font-weight: 500;    
 }
 
 .benefits-container{
@@ -291,18 +297,63 @@ span {
 }
 
 .circle-benefits{
-    width: 140px;
+    width: 240px;
     aspect-ratio: 1;
     color: #17181cf8;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 30px rgba(0, 106, 114, 0.6);
     line-height: fit-content;
     font-weight: 800;
     border-radius: 50%;
-    background: linear-gradient(to bottom right, #1c704a,#28b0bf);
+    background: linear-gradient(to bottom right, #ffffff,#03c197);
     font-size: 6rem;
     align-content: center;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: tock 3s infinite;
+}
+
+@keyframes tock {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1) }
+    100% { transform: scale(1); }
+
+}
+
+.benefits-right{
+    text-align: left;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-left: 2px solid #00000028;
+    padding-left: 30px;
+}
+
+.benefits-item{
+    display: flex;
+    font-weight: 500;
+    background-color: #00000028;
+    height: 90px;
+    border-radius: 15px;
+    padding-inline: 30px;
+    border: 1px solid #00000028;
+    padding-block: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-item span{
+    color: #03c197;
+}
+
+.subtitle-blue {
+    color: #a7ffec;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: -40px;
+}
+
+.subtitle-blue span {
+    color: #05ecb2;
 }
