@@ -51,15 +51,14 @@ html, body {
 }
 
 .container {
+    background: linear-gradient(to top left, #000000,#303030);
     width: fit-content;
-    background-color: #191919;
     align-content: center;
     width: 100vw;
     height: fit-content;
-    padding: 40px 0;
-    margin-top: 10vh;
     z-index:1;
-
+    height: 100vh;
+    border-bottom: 2px solid;
 }
 
 /* Chrome, Edge, Safari, Opera */
@@ -84,11 +83,13 @@ body {
 
 .content {
     display: flex;
+    flex-direction: column;
     gap: 0px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 
@@ -100,16 +101,6 @@ body {
         ::-webkit-scrollbar {
         display: none;
      }
-
-        .content-left {
-            margin-left: 0px !important;
-            justify-content: center !important;
-            align-items: center !important;
-            text-align: center !important;
-            margin-right: 0px !important;
-            padding-left: 0px !important;
-        }
-
         .text-content{
             align-items: center; 
             align-content: center;
@@ -146,32 +137,6 @@ body {
     }
 
 
-
-.content-left {
-    padding-left: 8%;
-    align-content: center;
-    width: 500px;
-    max-width: 90%;
-    margin-left:  5%;
-}
-
-.content-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content; 
-    height: 90%;
-    padding: 1rem; 
-}
-
-    .content-right svg {
-        display: block;
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-    }
-
-
 .info-badge {
     background-color: #16382d;
     padding-left: 12px;
@@ -191,16 +156,23 @@ body {
     width: 8lh;
 }
 
+.title span {
+    color: #00c288;
+}
+
 .subtitle{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom:-20px;
 }
 
+.subtitle span {
+    color: #00c288;
+}
 
 .descriptionEcommerce {
     margin: 0;
     width: 20lh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 700px;
     max-width: 100%;
 }
@@ -208,32 +180,37 @@ body {
 .buttonsInfoEcommerce{
     display: flex;
     gap: 30px;
+    
     margin-top: 20px;
 }
 
 .buttonExplorer {
-    background-color: var(--primary-color);
     font-weight: 600;
-    color: #16382d;
+    border: 1px solid #00c2ab34;
+    box-shadow: 0 0 10px rgba(0, 194, 158, 0.5);
     width: 12lh;
+    color: #ffffff;
+    background-color: #07966d;
     font-size: 16px;
 }
 
 .buttonTOP {
     width: 12lh;
-    color: #16382d;
+    background-color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 16px;
+    color: #07966d;
+    box-shadow: 0 0 10px #ffffff40;
 }
 
 .text-content{
-    justify-items: left;
+    justify-items: center;
+    width: 67ch;
     max-width: 100%;
 }
 
 .productsTOP {
     text-align: center;
-    hight: ;
     width: 100vw;
     padding: 0;
     display: flex;
@@ -254,7 +231,7 @@ body {
 
 
 .benefits{
-    background: linear-gradient(to right, #111111, #1a1a1a);
+    background: linear-gradient(to right, #0e0e0e, #1a1a1a,#0e0e0e);
     height: fit-content;
     width: 100%;
     padding-bottom: 70px;
@@ -265,7 +242,6 @@ body {
 }
 
 .benefits h2{
-    margin-top: 60px;
     font-weight:500;
     color: #b8ffe4;
     margin-bottom: 0;
@@ -293,18 +269,19 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 40%;
+    gap: 20px;
     text-align: center;
 }
 
 .circle-benefits{
-    width: 240px;
+    width: 190px;
     aspect-ratio: 1;
     color: #17181cf8;
     box-shadow: 0 0 30px rgba(0, 106, 114, 0.6);
     line-height: fit-content;
     font-weight: 800;
     border-radius: 50%;
-    background: linear-gradient(to bottom right, #ffffff,#03c197);
+    background: linear-gradient(to bottom right, #8adfa7,#03c197);
     font-size: 6rem;
     align-content: center;
     text-align: center;
@@ -312,6 +289,17 @@ body {
     align-items: center;
     justify-content: center;
     animation: tock 3s infinite;
+}
+
+.circle-text{
+    font-size: 1.4rem;
+    max-width: 20ch;
+    color: #ffffff !important;
+    align-items: start;
+    background-color: #00c2ab34;
+    padding: 3px;
+    border-radius: 12px;
+    border: 1px solid #00c2ab34;
 }
 
 @keyframes tock {
@@ -324,10 +312,11 @@ body {
 .benefits-right{
     text-align: left;
     align-items: left;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
     gap: 15px;
-    border-left: 2px solid #00000028;
+    border-left: 1px solid #33a281a2;
     padding-left: 30px;
 }
 
@@ -335,12 +324,20 @@ body {
     display: flex;
     font-weight: 500;
     background-color: #00000028;
-    height: 90px;
+    height: 130px;
+    align-items: center;
+    gap: 20px;
     border-radius: 15px;
     padding-inline: 30px;
-    border: 1px solid #00000028;
-    padding-block: 10px;
+    border: 1px solid #ffffff12;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: all ease .3s;
+}
+
+.benefits-item:hover{
+    background-color: #03c19723;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 2px #03c19740;
 }
 
 .benefits-item span{
@@ -356,4 +353,24 @@ body {
 
 .subtitle-blue span {
     color: #05ecb2;
+}
+
+.icon-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #51dbb4;
+    box-shadow: 0px 0px 10px rgb(131, 241, 182,0.3);
+    
+}
+
+
+.icon-benefits-lucide {
+    width: 40px;
+    height: 40px;
+    color: #151a18;
 }
