@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { BadgePercent, Newspaper, Package2, PackagePlus } from 'lucide-react';
 import Header from './components/Header';
-import {ReactLenis} from 'lenis/react';
 import Sidebar from './components/Sidebar';
 import Cardproduct from './components/CardProduct';
 import { motion } from 'framer-motion';
@@ -27,8 +26,8 @@ function Home() {
   }, [])
 
     return (
-        <ReactLenis root options={{ autoRaf: false}} ref={lenisRef}>
-            <div className='containerHome'>
+        <>
+        <div className='containerHome'>
             {mostrarSpinner && (
                 <motion.div
                     className="container-spinner"
@@ -143,7 +142,8 @@ function Home() {
                 </section>
             </div>
         </div>
-        </ReactLenis>
+        </>
+            
     );
 }
 
