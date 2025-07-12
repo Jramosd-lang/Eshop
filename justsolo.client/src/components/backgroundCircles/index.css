@@ -1,0 +1,47 @@
+.containerBackgroundC {
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle {
+    width: 40vw;
+    height: 40vw;
+    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#circle1 {
+    background-color: #1f3f34;
+    transform: translate(10vw, 12%);
+}
+
+#circle2 {
+    background-color: #195540;
+    transform: translate(0, 0);
+}
+
+#circle3 {
+    background-color: #00847c;
+    transform: translate(calc(100vw - 40vw - 20vw), 70vh);
+}
+
+#circle4 {
+    background-color: #004041;
+    transform: translate(80vw, 30%);
+}
+
+#circle5 {
+    background-color: #00272f;
+    transform: translate(calc(100vw - 40vw - 10vw), 10%);
+}
+
+#circle6 {
+    background-color: #005d37;
+    transform: translate(0, 0);
+}

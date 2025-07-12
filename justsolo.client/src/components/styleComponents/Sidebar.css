@@ -3,6 +3,7 @@
 body{
     padding:0;
     margin:0;
+
 }
 
 .listaSideBar {
@@ -17,8 +18,9 @@ body{
 
 .sidebar {
     display: flex;
+    top: 10vh;
     flex-direction: column;
-
+    height: 100%;
 }
 
 

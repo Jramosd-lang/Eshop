@@ -1,7 +1,8 @@
 import './Login.css';
 import '../../App.css'
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import  Background  from '../../components/backgroundCircles/index.jsx';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 async function confirmLogin(email, password) {
@@ -69,42 +70,7 @@ function App() {
                 </motion.div>
             )}
 
-            <motion.div
-                className="circle"
-                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, 200, 400, 200, 0], y: [0, 120, 240, 120, 0] }}
-                id="circle1"
-            ></motion.div>
-            <motion.div
-                className="circle"
-                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, 120, 240, 120, 0], y: [0, -80, 0, 80, 0] }}
-                id="circle2"
-            ></motion.div>
-            <motion.div
-                className="circle"
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, 40, 0, -40, 0], y: [0, -60, -120, -60, 0] }}
-                id="circle3"
-            ></motion.div>
-            <motion.div
-                className="circle"
-                transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, -100, -200, 100, 250, 120, 0], y: [0, 200, 0, -200, 0, 100, 0] }}
-                id="circle4"
-            ></motion.div>
-            <motion.div
-                className="circle"
-                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, 100, 0, -100, 0], y: [0, -60, -120, -60, 0] }}
-                id="circle5"
-            ></motion.div>
-            <motion.div
-                className="circle"
-                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                animate={{ x: [0, -120, -60, 60, 120, 0], y: [0, 60, 120, 120, 60, 0] }}
-                id="circle6"
-            ></motion.div>
+            <Background/>
 
             <div id="bc">
                 <div id="containerLogin">
@@ -150,7 +116,7 @@ function App() {
                                             type="password"
                                             id="password"
                                             name="password"
-                                            placeholder="**********"
+                                            placeholder="xxxxxxx"
                                             required
                                             value={password}
                                             onChange={e => setPassword(e.target.value)}

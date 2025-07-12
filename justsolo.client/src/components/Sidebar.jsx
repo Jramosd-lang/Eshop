@@ -3,8 +3,7 @@
 // 2. Crear un nuevo objeto de variantes para el icono, donde en "hidden" el SVG esté más a la izquierda (por ejemplo, x: -40).
 // 3. Aplicar motion al SVG usando motion.svg y pasarle los nuevos variants.
 // 4. El texto del nombre aparece como antes, pero el icono entra desde más lejos a la izquierda.
-
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion';
 import './styleComponents/Sidebar.css'
 
 const sidebarVariants = {
@@ -129,8 +128,7 @@ const Sidebar = ({ visible, onClose }) => {
                 initial="hidden"
                 animate={visible ? "visible" : "hidden"}
                 style={{
-                    position: "fixed",
-                    top: "10vh",
+                    position: "absolute",
                     left: 0,
                     width: "225px",
                     height: "100%",

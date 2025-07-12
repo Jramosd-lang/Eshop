@@ -1,9 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState} from 'react';
 import { BadgePercent, Newspaper, Package2, PackagePlus } from 'lucide-react';
 import Header from '../../components/Header.jsx';
 import Sidebar from '../../components/Sidebar.jsx';
 import Cardproduct from '../../components/CardProduct.jsx';
 import { motion } from 'framer-motion';
+import Background from '../../components/backgroundCircles/index.jsx';
 import "./Home.css";
 import "../../../index.css";
 
@@ -13,21 +14,13 @@ function Home() {
 
     const toggleSidebar = () => setMostrarSidebar(!mostrarSidebar);
 
-    const lenisRef = useRef()
-  
-  useEffect(() => {
-    function update(time) {
-      lenisRef.current?.lenis?.raf(time)
-    }
-  
-    const rafId = requestAnimationFrame(update)
-  
-    return () => cancelAnimationFrame(rafId)
-  }, [])
+
+
 
     return (
         <>
-        <div className='containerHome'>
+        <div className='containerAll'>
+
             {mostrarSpinner && (
                 <motion.div
                     className="container-spinner"
@@ -49,33 +42,42 @@ function Home() {
             />
             <Header toggleSidebar={toggleSidebar} />
 
-            <div>
-                <section className="containerInfo">
-                    <div className="container">
-                        <div className="content">
-                            <div className="text-content">
-                                <badge className="info-badge">Nuevos productos cada mes</badge>
-                                <h1 className="title">
-                                    Elegáncia
-                                    <span className="title-span"> Redefinida</span>
-                                </h1>
-                                <p className="descriptionEcommerce">
-                                    En ecommerce estamos siempre preocupandonos por tus necesidades, con un solo click
-                                    accede a nuestros productos y disfruta de una vida mas feliz y sencilla, te esperamos
-                                    con los brazos abiertos
-                                </p>
-                            </div>
-                            <div className="buttonsInfoEcommerce">
-                                <button className='buttonExplorer'>
-                                    Explorar Categorias
-                                </button>
-                                <button variant="outline" className="buttonTOP">
-                                    Ver Productos
-                                </button>
+            <div className='containerHome'>
+
+                <div className='containerBackground'>
+
+                    <section className="containerBackground">
+                     <Background/>
+                        <div className='containerA'>
+                            <div className="container">
+
+                                <div className="content">
+                                    <div className="text-content">
+                                        <badge className="info-badge">Nuevos productos cada mes</badge>
+                                        <h1 className="title">
+                                            Elegáncia
+                                            <span className="title-span"> Redefinida</span>
+                                        </h1>
+                                        <p className="descriptionEcommerce">
+                                            En ecommerce estamos siempre preocupandonos por tus necesidades, con un solo click
+                                            accede a nuestros productos y disfruta de una vida mas feliz y sencilla, te esperamos
+                                            con los brazos abiertos
+                                        </p>
+                                    </div>
+                                    <div className="buttonsInfoEcommerce">
+                                        <button className='buttonExplorer'>
+                                            Explorar Categorias
+                                        </button>
+                                        <button variant="outline" className="buttonTOP">
+                                            Ver Productos
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    
+                    </section>
+                </div>
 
                 <section className="productsTOP">
                     <div>
@@ -100,46 +102,68 @@ function Home() {
                     </div>
                 </section>
 
-                <section className='benefits'>
-                    <div>
-                        <h3 className="subtitle">Beneficios de <span>ser cliente</span></h3>
-                    </div>
+                <div className='containerBackground'>
+                    <Background/>
+                    <div className='containerA'>
+                        <section className='benefits'>
 
-                    <div className='benefits-container'>
-                        <div className='benefits-left'>
-                            <div className='circle-benefits'>
-                                %
+                            <div>
+                            <h3 className="subtitle">Beneficios de <span>ser cliente</span></h3>
                             </div>
-                            <h2 className='circle-text'>Descuentos para nuestros <span>miembros</span></h2>
-                        </div>
-                        <div className='benefits-right'>
-                            <div className='benefits-item'>
-                                <div className='icon-benefits'>
-                                    <BadgePercent className='icon-benefits-lucide'/>
+
+                            <div className='benefits-container'>
+                                <div className='benefits-left'>
+                                    <div className='circle-benefits'>
+                                        %
+                                    </div>
+                                    <h2 className='circle-text'>Descuentos para nuestros <span>miembros</span></h2>
                                 </div>
-                                <h3>Acceso a promociones <span>exclusivas</span></h3>
-                            </div>
-                            <div className='benefits-item'>
-                                <div className='icon-benefits'>
-                                    <Newspaper className='icon-benefits-lucide'/> 
+                                <div className='benefits-right'>
+                                    <div className='benefits-item'>
+                                        <div className='icon-benefits'>
+                                            <BadgePercent className='icon-benefits-lucide'/>
+                                        </div>
+                                        <h3>Acceso a promociones <span>exclusivas</span></h3>
+                                    </div>
+                                    <div className='benefits-item'>
+                                        <div className='icon-benefits'>
+                                            <Newspaper className='icon-benefits-lucide'/> 
+                                        </div>
+                                        <h3>Atención al cliente <span>personalizada</span></h3>
+                                    </div>
+                                    <div className='benefits-item'>
+                                        <div className='icon-benefits'>
+                                            <Package2 className='icon-benefits-lucide'/>
+                                        </div>
+                                        <h3>Envíos gratis en compras mayores a <span>$100</span></h3>
+                                    </div>
+                                    <div className='benefits-item'>
+                                        <div className='icon-benefits'>
+                                            <PackagePlus className='icon-benefits-lucide'/>
+                                        </div>
+                                        <h3>Acceso anticipado a nuevos <span>productos</span></h3>
+                                    </div>
                                 </div>
-                                <h3>Atención al cliente <span>personalizada</span></h3>
                             </div>
-                            <div className='benefits-item'>
-                                <div className='icon-benefits'>
-                                    <Package2 className='icon-benefits-lucide'/>
+                        </section>
+                        <section className='rate'>
+                            <div className='containerRates'>
+                                <div className='descriptionRates'>
+                                    <h3>Nuestras evidencias</h3>
+                                    <p>
+                                        
+                                    </p>
                                 </div>
-                                <h3>Envíos gratis en compras mayores a <span>$100</span></h3>
-                            </div>
-                            <div className='benefits-item'>
-                                <div className='icon-benefits'>
-                                    <PackagePlus className='icon-benefits-lucide'/>
+                                <div className='rates-comments'>
+
                                 </div>
-                                <h3>Acceso anticipado a nuevos <span>productos</span></h3>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                </section>
+                </div>
+
+
+                
             </div>
         </div>
         </>
