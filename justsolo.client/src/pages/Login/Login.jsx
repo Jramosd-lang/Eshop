@@ -1,4 +1,5 @@
-import './styles/Login.css';
+import './Login.css';
+import '../../App.css'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';

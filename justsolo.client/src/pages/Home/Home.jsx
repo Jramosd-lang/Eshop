@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { BadgePercent, Newspaper, Package2, PackagePlus } from 'lucide-react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Cardproduct from './components/CardProduct';
+import Header from '../../components/Header.jsx';
+import Sidebar from '../../components/Sidebar.jsx';
+import Cardproduct from '../../components/CardProduct.jsx';
 import { motion } from 'framer-motion';
-import "./styles/Home.css";
-import "./styles/App.css";
+import "./Home.css";
+import "../../../index.css";
 
 function Home() {
     const [mostrarSidebar, setMostrarSidebar] = useState(false);

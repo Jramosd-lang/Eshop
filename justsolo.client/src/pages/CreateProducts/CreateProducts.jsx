@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Header from './components/Header.jsx';
-import Sidebar from './components/Sidebar.jsx';
-import CRUDProducts from './components/CRUDProducts.jsx';
-import './styles/Products.css';
+import Header from '../../components/Header.jsx';
+import Sidebar from '../../components/Sidebar.jsx';
+import CRUDProducts from '../../components/CRUDProducts.jsx';
+import './CreateProducts.css';
 
 
-function Products() {
+function CreateProducts() {
     const [mostrarSidebar, setMostrarSidebar] = useState(false);
 
     const toggleSidebar = () => setMostrarSidebar(!mostrarSidebar);
@@ -21,4 +21,4 @@ function Products() {
     );
 }
 
-export default Products;
+export default CreateProducts;
