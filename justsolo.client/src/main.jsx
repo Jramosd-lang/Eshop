@@ -5,7 +5,7 @@ import '../index.css';
 
 import Login from './pages/Login/Login.jsx';
 import Home from './pages/Home/Home.jsx';
-import CreateProducts from './pages/createProducts/createProducts.jsx';
+import CreateProducts from './pages/CreateProducts/CreateProducts.jsx';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
