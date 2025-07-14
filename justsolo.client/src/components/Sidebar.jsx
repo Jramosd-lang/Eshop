@@ -128,11 +128,11 @@ const Sidebar = ({ visible, onClose }) => {
                 initial="hidden"
                 animate={visible ? "visible" : "hidden"}
                 style={{
-                    position: "absolute",
+                    position: "fixed",
                     left: 0,
                     width: "225px",
                     height: "100%",
-                    background: "rgba(23, 23, 23, 0.85)",
+                    background: "rgba(23, 23, 23, 0.45)",
                     backdropFilter: "blur(20px)",
                     borderRight: "solid 2px #ffffff23",
                     paddingTop: "40px",

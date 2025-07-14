@@ -10,7 +10,7 @@ function Header({ toggleSidebar }) {
     return (
 
         <header style={{
-            background: 'rgba(23, 23, 23, 0.85)',
+            background: 'rgba(23, 23, 23, 0.45)',
             backdropFilter:'blur(30px)',
             height: '10vh',
             borderBottom:'1px solid #ffffff23',
@@ -19,7 +19,7 @@ function Header({ toggleSidebar }) {
             paddingRight: '20px',
             justifyContent: 'flex-end',
             fontFamily: 'Roboto',
-            position: 'absolute',
+            position: 'fixed',
             zIndex:'3',
             width: '100vw',
             padding:' 0 10px'
