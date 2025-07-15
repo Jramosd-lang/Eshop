@@ -10,8 +10,8 @@ function Background(){
     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
     animate={{ 
         transform: [
-            "translate(40%, 20%)",
-            "translate(45%, 35%)",
+            "translate(40%, 20vh)",
+            "translate(45%, 35vh)",
             "translate(50%, 50%)",
             "translate(45%, 40%)",
             "translate(40%, 60%)"
